@@ -9,7 +9,7 @@ extern int nextmap;
 
 #define T_NULL	    ""
 
-#define MI_TXT01    "Area Inicial"
+#define MI_TXT01    "Iniciando Area"
 #define MI_TXT02    "Terraformador"
 #define MI_TXT03    "Engenharia"
 #define MI_TXT04    "Area de Retencao"
@@ -287,7 +287,7 @@ pvr_fog_table_color(0.0f,0.0f,0.0f,0.0f);
 
 	ST_DrawString(-1, 20, MapInfo[gamemap].name, PACKRGBA(255, 255, 255, text_alpha));
 
-	ST_DrawString(-1, 36, "Finalizado", PACKRGBA(255, 255, 255, text_alpha));
+	ST_DrawString(-1, 36, "Fim", PACKRGBA(255, 255, 255, text_alpha));
 
     if ((nextstage > 0) && (killvalue > -1))
     {

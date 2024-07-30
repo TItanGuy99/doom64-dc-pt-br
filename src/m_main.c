@@ -52,9 +52,9 @@ char *ControlText[] =   //8007517C
 #define M_TXT20 "Sim"
 #define M_TXT21 "Nao"
 #define M_TXT22 "Recursos"
-#define M_TXT23 "TRANSPORTAR PARA NIVEL"
+#define M_TXT23 "IR PARA NIVEL"
 #define M_TXT24 "INVULNERAVEL"
-#define M_TXT25 "AUMENTO DE VIDA"
+#define M_TXT25 "AUMENTAR VIDA"
 #define M_TXT26 "CHAVES DE SEGURANCA"
 #define M_TXT27 "ARMAS"
 #define M_TXT28 "Sair"
@@ -92,8 +92,8 @@ char *ControlText[] =   //8007517C
 #define M_TXT58 "Implacavel" // [Immorpher] Configuracões padrão implacáveis
 #define M_TXT59 "Immorpher" // [Immorpher] Configuracões padrão Immorpher
 #define M_TXT60 "Acessivel" // [Immorpher] Configuracões padrão de acessibilidade aumentada
-#define M_TXT61 "Texto da Historia:" // [Immorpher] Pular cenas cortadas
-#define M_TXT62 "Estatisticas do Mapa:" // [Immorpher] Exibir estatísticas do automapa
+#define M_TXT61 "Historia:" // [Immorpher] Pular cenas cortadas
+#define M_TXT62 "Estatisticas:" // [Immorpher] Exibir estatísticas do automapa
 #define M_TXT63 "HUD de Status" // [Immorpher] Nova opcão de menu para elementos do HUD!
 #define M_TXT64 "Margem" // [Immorpher] Ajustar a margem para o HUD
 #define M_TXT65 "TRANSPORTAR PARA MAE" // [Immorpher] Novos recursos do menu de transportes
@@ -102,7 +102,7 @@ char *ControlText[] =   //8007517C
 #define M_TXT68 "GAMMA CORRETO"   // [Immorpher] NOVO CÓDIGO DE TRAPAcA
 
 // Merciless Edition Credits
-#define M_TXT69 "CREDITOS DA EDIcAO IMPLACAVEL"   // [Immorpher] Credits
+#define M_TXT69 "CREDITOS DA EDICAO IMPLACAVEL"   // [Immorpher] Credits
 #define M_TXT70 "PROGRAMACAO IMPLACAVEL: IMMORPHER"   // [Immorpher] Credits
 #define M_TXT71 "ENGENHARIA REVERSA: ERICK194"   // [Immorpher] Credits
 #define M_TXT72 "KAISER"   // [Immorpher] Credits
@@ -2191,7 +2191,7 @@ void M_FeaturesDrawer(void) // 800091C0
                 sprintf(textbuff, "%s", MapInfo[m_actualmap].name);
                 break;
             case 24: /* INVULNERABLE */
-                text = (!(players[0].cheats & CF_GODMODE)) ? "DESLIGADO" : "LIGADO";
+                text = (!(players[0].cheats & CF_GODMODE)) ? "DES" : "LIG";
                 break;
             case 25: /* HEALTH BOOST */
                 text = (!(players[0].cheats & CF_HEALTH)) ? "-" : "100%";
@@ -2205,25 +2205,25 @@ void M_FeaturesDrawer(void) // 800091C0
             case 28: /* Exit */
                 break;
             case 29: /* DEBUG */
-                text = (!(players[0].cheats & CF_DEBUG)) ? "DESLIGADO" : "LIGADO";
+                text = (!(players[0].cheats & CF_DEBUG)) ? "DES" : "LIG";
                 break;
             case 30: /* TEXTURE TEST */
-                text = (!(players[0].cheats & CF_TEX_TEST)) ? "DESLIGADO" : "LIGADO";
+                text = (!(players[0].cheats & CF_TEX_TEST)) ? "DES" : "LIG";
                 break;
             case 31: /* WALL BLOCKING */
-                text = (!(players[0].cheats & CF_WALLBLOCKING)) ? "LIGADO" : "DESLIGADO";
+                text = (!(players[0].cheats & CF_WALLBLOCKING)) ? "LIG" : "DES";
                 break;
             case 35: /* LOCK MONSTERS */
-                text = (!(players[0].cheats & CF_LOCKMOSTERS)) ? "DESLIGADO" : "LIGADO";
+                text = (!(players[0].cheats & CF_LOCKMOSTERS)) ? "DES" : "LIG";
                 break;
             case 36: /* SCREENSHOT */
-                text = (!(players[0].cheats & CF_SCREENSHOT)) ? "DESLIGADO" : "LIGADO";
+                text = (!(players[0].cheats & CF_SCREENSHOT)) ? "DES" : "LIG";
                 break;
             case 37: /* MAP EVERYTHING */
-                text = (!(players[0].cheats & CF_ALLMAP)) ? "DESLIGADO" : "LIGADO";
+                text = (!(players[0].cheats & CF_ALLMAP)) ? "DES" : "LIG";
                 break;
             case 38: /* MACRO PEEK */
-                text = ((players[0].cheats & CF_MACROPEEK)) ? "LIGADO" : "DESLIGADO";
+                text = ((players[0].cheats & CF_MACROPEEK)) ? "LIG" : "DES";
                 break;
             case 39: /* MUSIC TEST */
                 sprintf(textbuff, "%d", MusicID);
@@ -2231,15 +2231,15 @@ void M_FeaturesDrawer(void) // 800091C0
 
             // [GEC] NOVOS CÓDIGOS DE TRAPAcA
             case 48: /* COLORS */
-                text = (!(players[0].cheats & CF_NOCOLORS)) ? "LIGADO" : "DESLIGADO";
+                text = (!(players[0].cheats & CF_NOCOLORS)) ? "LIG" : "DES";
                 break;
 
             case 49: /* FULL BRIGHT */
-                text = (!(players[0].cheats & CF_FULLBRIGHT)) ? "DESLIGADO" : "LIGADO";
+                text = (!(players[0].cheats & CF_FULLBRIGHT)) ? "DES" : "LIG";
                 break;
 
             case 68: /* Gamma Correction */
-                text = (!(players[0].cheats & CF_GAMMA)) ? "DESLIGADO" : "LIGADO";
+                text = (!(players[0].cheats & CF_GAMMA)) ? "DES" : "LIG";
                 break;
 
             default:
@@ -2316,9 +2316,9 @@ void M_MovementDrawer(void) // 80009738
 		if (casepos == 12) // [Immorpher] Autorun
         {
             if (Autorun)
-                text = "Ligado";
+                text = "LIG";
             else
-                text = "Desligado";
+                text = "DES";
         }
         else
         {
@@ -2361,30 +2361,30 @@ void M_VideoDrawer(void) // 80009884
         if (casepos == 50) // [GEC and Immorpher] New video filter
         {
             if (VideoFilter == 0)
-                text = "Ligado";
+                text = "LIG";
             else
-                text = "Desligado";
+                text = "DES";
         }		
         else if (casepos == 54) // [Immorpher] Anti-Aliasing
         {
             if (antialiasing)
-                text = "Ligado";
+                text = "LIG";
             else
-                text = "Desligado";
+                text = "DES";
         }
         else if (casepos == 55) // [Immorpher] Interlacing
         {
             if (interlacing)
-                text = "Ligado";
+                text = "LIG";
             else
-                text = "Desligado";
+                text = "DES";
         }
         else if (casepos == 53) // [Immorpher] Dither Filter
         {
             if (DitherFilter)
-                text = "Ligado";
+                text = "LIG";
             else
-                text = "Desligado";
+                text = "DES";
         }
         else if (casepos == 56) // [Immorpher] Dither Filter
         {
@@ -2395,7 +2395,7 @@ void M_VideoDrawer(void) // 80009884
             else if (ColorDither == 3)
                 text = "Ruido";
             else
-                text = "Desligado";
+                text = "DES";
         }
         else
         {
@@ -2433,16 +2433,16 @@ void M_DisplayDrawer(void) // 80009884
         if (casepos == 61) // Story Text:
         {
             if (StoryText)
-                text = "Ligado";
+                text = "LIG";
             else
-                text = "Desligado";
+                text = "DES";
         }
         else if (casepos == 62) // Map stats:
         {
             if (MapStats)
-                text = "Ligado";
+                text = "LIG";
             else
-                text = "Desligado";
+                text = "DES";
         }
         else
         {
@@ -2481,16 +2481,16 @@ void M_StatusHUDDrawer(void) // 80009884
         if (casepos == 33) // Messages:
         {
             if (enable_messages)
-                text = "Ligado";
+                text = "LIG";
             else
-                text = "Desligado";
+                text = "DES";
         }
         else if (casepos == 67) // Colored HUD:
         {
             if (ColoredHUD)
-                text = "Ligado";
+                text = "LIG";
             else
-                text = "Desligado";
+                text = "DES";
         }
         else
         {
