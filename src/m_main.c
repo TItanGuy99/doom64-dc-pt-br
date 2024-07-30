@@ -7,117 +7,122 @@
 //intermission
 int DrawerStatus;
 
-#define CT_TXT00    "padrao: %d"
-#define CT_TXT01    "direita"
-#define CT_TXT02    "esquerda"
-#define CT_TXT03    "frente"
-#define CT_TXT04    "tras"
-#define CT_TXT05    "atacar"
-#define CT_TXT06    "usar"
-#define CT_TXT07    "mapa"
-#define CT_TXT08    "velocidade"
-#define CT_TXT09    "strafe ligado"
-#define CT_TXT10    "strafe esquerda"
-#define CT_TXT11    "strafe direita"
-#define CT_TXT12    "arma para tras"
-#define CT_TXT13    "arma para frente"
+#define CT_TXT00	"padrao: %d"
+#define CT_TXT01	"direita"
+#define CT_TXT02	"esquerda"
+#define CT_TXT03	"frente"
+#define CT_TXT04	"tras"
+#define CT_TXT05	"atacar"
+#define CT_TXT06	"usar"
+#define CT_TXT07	"mapa"
+#define CT_TXT08	"velocidade"
+#define CT_TXT09	"strafe ligado"
+#define CT_TXT10	"strafe esquerda"
+#define CT_TXT11	"strafe direita"
+#define CT_TXT12	"arma para tras"
+#define CT_TXT13	"arma para frente"
 
 char *ControlText[] =   //8007517C
 {
     CT_TXT00, CT_TXT01, CT_TXT02, CT_TXT03, CT_TXT04,
-    CT_TXT05, CT_TXT06, CT_TXT07, CT_TXT08, CT_TXT09,
-    CT_TXT10, CT_TXT11, CT_TXT12, CT_TXT13
+	CT_TXT05, CT_TXT06, CT_TXT07, CT_TXT08, CT_TXT09,
+	CT_TXT10, CT_TXT11, CT_TXT12, CT_TXT13
 };
 
-#define M_TXT00    "Controle"
-#define M_TXT01    "Volume"
-#define M_TXT02    "Video"
-#define M_TXT03    "Senha"
-#define M_TXT04    "Menu Principal"
-#define M_TXT05    "Reiniciar Nivel"
-#define M_TXT06    "\x90 Voltar"
-#define M_TXT07    "Volume da Musica"
-#define M_TXT08    "Volume do Som"
-#define M_TXT09    "Brilho"
-#define M_TXT10    "Retomar"
-#define M_TXT11    "Opcoes"
-#define M_TXT12    "Autorun:"
-#define M_TXT13    "Padroes" // padrao para video
-#define M_TXT14    "Novo Jogo"
-#define M_TXT15    "Seja Gentil!"
-#define M_TXT16    "Pode Vir!"
-#define M_TXT17    "Eu Dominei Doom!"
-#define M_TXT18    "Veja-me Morrer!"
-#define M_TXT19    "Seja Implacavel!"
-#define M_TXT20    "Sim"
-#define M_TXT21    "Nao"
-#define M_TXT22    "Recursos"
-#define M_TXT23    "TRANSPORTAR PARA NIVEL"
-#define M_TXT24    "INVULNERAVEL"
-#define M_TXT25    "AUMENTO DE SAUDE"
-#define M_TXT26    "CHAVES DE SEGURANCA"
-#define M_TXT27    "ARMAS"
-#define M_TXT28    "Sair"
-#define M_TXT29    "DEBUG"
-#define M_TXT30    "TESTE DE TEXTURAS"
-#define M_TXT31    "BLOQUEIO DE PAREDES"
-#define M_TXT32    "Centralizar Exibicao"
-#define M_TXT33    "Mensagens:"
-#define M_TXT34    "Opacidade"
-#define M_TXT35    "BLOQUEAR MONSTROS"
-#define M_TXT36    "CAPTURA DE TELA"
-#define M_TXT37    "MAPEAR TUDO"
-#define M_TXT38    "MACRO PEEK"
-#define M_TXT39    "TESTE DE MUSICA"
-#define M_TXT40    "TRANSPORTAR PARA DIVERTIDO"
-#define M_TXT41    "Movimento"
-#define M_TXT42    "Original" // Original padrao para Doom 64
-#define M_TXT43    "Sensibilidade"
-#define M_TXT44    "Gerenciar Pak"
-#define M_TXT45    "Nao usar Pak"
-#define M_TXT46    "Tente novamente"
-#define M_TXT47    "Criar nota do jogo"
+#define M_TXT00	"Controle"
+#define M_TXT01	"Volume"
+#define M_TXT02	"Video"
+#define M_TXT03	"Senha"
+#define M_TXT04	"Menu Principal"
+#define M_TXT05	"Reiniciar Nivel"
+#define M_TXT06	"\x90 Voltar"
+#define M_TXT07 "Volume da Musica"
+#define M_TXT08 "Volume do Som"
+#define M_TXT09 "Brilho"
+#define M_TXT10 "Continuar"
+#define M_TXT11 "Opcoes"
+#define M_TXT12 "Autorun:"
+#define M_TXT13 "Padroes" // padrao para video
+#define M_TXT14 "Novo Jogo"
+#define M_TXT15 "Seja Gentil!"
+#define M_TXT16 "Pode Vir!"
+#define M_TXT17 "Sou o Dono do Doom!"
+#define M_TXT18 "Veja-me Morrer!"
+#define M_TXT19 "Seja Implacavel!"
+#define M_TXT20 "Sim"
+#define M_TXT21 "Nao"
+#define M_TXT22 "Recursos"
+#define M_TXT23 "TRANSPORTAR PARA NIVEL"
+#define M_TXT24 "INVULNERAVEL"
+#define M_TXT25 "AUMENTO DE VIDA"
+#define M_TXT26 "CHAVES DE SEGURANCA"
+#define M_TXT27 "ARMAS"
+#define M_TXT28 "Sair"
+#define M_TXT29 "DEBBUGAR"
+#define M_TXT30 "TESTE DE TEXTURA"
+#define M_TXT31 "BLOQUEIO DE PAREDES"
+#define M_TXT32 "Centralizar Tela"
+#define M_TXT33 "Mensagens:"
+#define M_TXT34 "Opacidade"
+#define M_TXT35 "BLOQUEAR MONSTROS"
+#define M_TXT36 "CAPTURA DE TELA"
+#define M_TXT37 "MAPEAR TUDO"
+#define M_TXT38 "MACRO PEEK"
+#define M_TXT39 "TESTE DE MUSICA"
+#define M_TXT40 "TRANSPORTAR PARA DIVERSAO"
+#define M_TXT41 "Movimento"
+#define M_TXT42 "Original" // Original padrao para Doom 64
+#define M_TXT43 "Sensibilidade"
+#define M_TXT44 "Gerenciar Pak"
+#define M_TXT45 "Nao usar Pak"
+#define M_TXT46 "Tente novamente"
+#define M_TXT47 "Criar nota do jogo"
 
-// Novidades para Doom 64 RE e Merciless Edition
-#define M_TXT48    "CORES"     // [GEC] NOVO CODIGO DE TRAPAÇA
-#define M_TXT49    "BRILHO TOTAL"   // [GEC] NOVO CODIGO DE TRAPAÇA
-#define M_TXT50    "Filtragem:"   // [GEC] Nova opcao de filtro de video
-#define M_TXT51    "Exibicao"   // [Immorpher] Novo item de menu
-#define M_TXT52    "Movimento Bob"   // [Immorpher] Novo item de menu
-#define M_TXT53    "Filtro Dither:" // [Immorpher] Filtro Dither
-#define M_TXT54    "Anti-Aliasing:" // [Immorpher] Nova opcao de anti-aliasing
-#define M_TXT55    "Entrelaçamento:" // [Immorpher] Nova opcao de entrelacamento
-#define M_TXT56    "Dither de Cores:" // [Immorpher] Novas opcoes de dither de cores
-#define M_TXT57    "Brilho do Flash" // [Immorpher] Nova opcao de brilho do flash
-#define M_TXT58    "Implacavel" // [Immorpher] Configuracoes padrao implacaveis
-#define M_TXT59    "Immorpher" // [Immorpher] Configuracoes padrao Immorpher
-#define M_TXT60    "Acessivel" // [Immorpher] Configuracoes padrao de maior acessibilidade
-#define M_TXT61    "Texto da Historia:" // [Immorpher] Pular cenas
-#define M_TXT62    "Estatisticas do Mapa:" // [Immorpher] Exibir estatisticas do automapa
-#define M_TXT63    "HUD de Status" // [Immorpher] Nova opcao de menu para elementos do HUD!
-#define M_TXT64    "Margem" // [Immorpher] Ajustar a margem para o HUD
-#define M_TXT65    "TRANSPORTAR PARA MAE" // [Immorpher] Novos recursos de menu
-#define M_TXT66    "TRANSPORTAR PARA SECRETO" // [Immorpher] Novos recursos de menu
-#define M_TXT67    "Colorido:" // [Immorpher] HUD colorido
-#define M_TXT68    "CORRECAO DE GAMMA"   // [Immorpher] NOVO CODIGO DE TRAPAÇA
+// New additions to Doom 64 RE and Merciless Edition
+#define M_TXT48 "CORES"     // [GEC] NOVO CÓDIGO DE TRAPAcA
+#define M_TXT49 "TOTALMENTE BRILHANTE"   // [GEC] NOVO CÓDIGO DE TRAPAcA
+#define M_TXT50 "Filtragem:"   // [GEC] Nova opcão de filtro de vídeo
+#define M_TXT51 "Tela"   // [Immorpher] Novo item de menu
+#define M_TXT52 "Balanco de Movimento"   // [Immorpher] Novo item de menu
+#define M_TXT53 "Filtro Dither:" // [Immorpher] Filtro Dither
+#define M_TXT54 "Anti-Aliasing:" // [Immorpher] Nova opcão de anti-aliasing
+#define M_TXT55 "Entrelacamento:" // [Immorpher] Nova opcão de entrelacamento
+#define M_TXT56 "Dither de Cor:" // [Immorpher] Novas opcões de dither de cor
+#define M_TXT57 "Brilho do Flash" // [Immorpher] Nova opcão de brilho do flash
+#define M_TXT58 "Implacavel" // [Immorpher] Configuracões padrão implacáveis
+#define M_TXT59 "Immorpher" // [Immorpher] Configuracões padrão Immorpher
+#define M_TXT60 "Acessivel" // [Immorpher] Configuracões padrão de acessibilidade aumentada
+#define M_TXT61 "Texto da Historia:" // [Immorpher] Pular cenas cortadas
+#define M_TXT62 "Estatisticas do Mapa:" // [Immorpher] Exibir estatísticas do automapa
+#define M_TXT63 "HUD de Status" // [Immorpher] Nova opcão de menu para elementos do HUD!
+#define M_TXT64 "Margem" // [Immorpher] Ajustar a margem para o HUD
+#define M_TXT65 "TRANSPORTAR PARA MAE" // [Immorpher] Novos recursos do menu de transportes
+#define M_TXT66 "TRANSPORTAR PARA SECRETO" // [Immorpher] Novos recursos do menu de transportes
+#define M_TXT67 "Colorido:" // [Immorpher] HUD colorido
+#define M_TXT68 "GAMMA CORRETO"   // [Immorpher] NOVO CÓDIGO DE TRAPAcA
 
-// Créditos da Merciless Edition
-#define M_TXT69    "CREDITOS DA EDICAO IMPLACAVEL"   // [Immorpher] Créditos
-#define M_TXT70    "PROGRAMACAO IMPLACAVEL: IMMORPHER"   // [Immorpher] Créditos
-#define M_TXT71    "ENGENHARIA REVERSA: ERICK194"   // [Immorpher] Créditos
-#define M_TXT72    "KAISER"   // [Immorpher] Créditos
-#define M_TXT73    "BODB DEARG"   // [Immorpher] Créditos
-#define M_TXT74    "QUASAR"   // [Immorpher] Créditos
-#define M_TXT75    "ATIVOS DO COMPILADOR: CRASHOVERIDE"   // [Immorpher] Créditos
-#define M_TXT76    "ALPHATANGO"   // [Immorpher] Créditos
-#define M_TXT77    "TESTE DE JOGO: SCD, BUU342"   // [Immorpher] Créditos
-#define M_TXT78    "IRL RANDOM HAJILE"   // [Immorpher] Créditos
-#define M_TXT79    "TAUFAN99"   // [Immorpher] Créditos
-#define M_TXT80    "AGRADECIMENTOS ESPECIAIS: EQUIPE GEC, DOOMWORLD"   // [Immorpher] Créditos
-#define M_TXT81    "DISCORD DOOM 64"   // [Immorpher] Créditos
-#define M_TXT82    "NEIGH WINNY"   // [Immorpher] Créditos
-#define M_TXT83    "ISANN KEKET"   // [Immorpher] Créditos
-#define M_TXT84    "NEVANDER"   // [Immorpher] Créditos
+// Merciless Edition Credits
+#define M_TXT69 "CREDITOS DA EDIcAO IMPLACAVEL"   // [Immorpher] Credits
+#define M_TXT70 "PROGRAMACAO IMPLACAVEL: IMMORPHER"   // [Immorpher] Credits
+#define M_TXT71 "ENGENHARIA REVERSA: ERICK194"   // [Immorpher] Credits
+#define M_TXT72 "KAISER"   // [Immorpher] Credits
+#define M_TXT73 "BODB DEARG"   // [Immorpher] Credits
+#define M_TXT74 "QUASAR"   // [Immorpher] Credits
+#define M_TXT75 "ATIVOS DO COMPILADOR: CRASHOVERIDE"   // [Immorpher] Credits
+#define M_TXT76 "ALPHATANGO"   // [Immorpher] Credits
+#define M_TXT77 "TESTES DE JOGO: SCD, BUU342"   // [Immorpher] Credits
+#define M_TXT78 "IRL RANDOM HAJILE"   // [Immorpher] Credits
+#define M_TXT79 "TAUFAN99"   // [Immorpher] Credits
+#define M_TXT80 "AGRADECIMENTOS ESPECIAIS: EQUIPE GEC, DOOMWORLD"   // [Immorpher] Credits
+#define M_TXT81 "DISCORD DO DOOM 64"   // [Immorpher] Credits
+#define M_TXT82 "NEIGH WINNY"   // [Immorpher] Credits
+#define M_TXT83 "ISANN KEKET"   // [Immorpher] Credits
+#define M_TXT84 "NEVANDER"   // [Immorpher] Credits
+#define M_TXT85 "CANAL COSTENARO PLAY"
+#define M_TXT86 "CANAL DRASGON DIGGER"
+#define M_TXT87 "CANAL DREAMQUEST5784"
+#define M_TXT88 "CANAL ESTACAO FICCAO"  
+#define M_TXT89 "CANAL NAI ADVENTURE" 
 
 char *MenuText[] =   // 8005ABA0
 {
@@ -138,6 +143,7 @@ char *MenuText[] =   // 8005ABA0
 	M_TXT70, M_TXT71, M_TXT72, M_TXT73, M_TXT74,
     M_TXT75, M_TXT76, M_TXT77, M_TXT78, M_TXT79,
 	M_TXT80, M_TXT81, M_TXT82, M_TXT83, M_TXT84,
+    M_TXT85, M_TXT86, M_TXT87, M_TXT88, M_TXT89,
 };
 
 #define NUM_MENU_TITLE 3
@@ -725,7 +731,7 @@ void M_MenuGameDrawer(void) // 80007C48
         if (MenuItem != Menu_Title) {
             M_DrawOverlay(0, 0, 320, 240, 96);
         }
-        M_DrawBackground(56, 57, 80, "TITULO", 10.0, 0);
+        M_DrawBackground(56, 57, 80, "TITLE", 10.0, 0);
 
         MenuCall();
         I_DrawFrame();
@@ -2102,8 +2108,8 @@ void M_MenuTitleDrawer(void) // 80008E7C
     int i;
     if (MenuItem == Menu_Game)
     {
-        ST_DrawString(-1, 20, "Pausar", text_alpha | 0xc0000000);
-        ST_DrawString(-1, 200, "pressione \x8d para retomar", text_alpha | 0xffffff00);
+        ST_DrawString(-1, 20, "Pausado", text_alpha | 0xc0000000);
+        ST_DrawString(-1, 200, "aperte \x8d para continuar", text_alpha | 0xffffff00);
     }
     else if (MenuItem == Menu_Skill)
     {
@@ -2123,11 +2129,11 @@ void M_MenuTitleDrawer(void) // 80008E7C
     }
     else if (MenuItem == Menu_ControllerPakBad)
     {
-        ST_DrawString(-1, 20, "Pak de Controle Ruim", text_alpha | 0xc0000000);
+        ST_DrawString(-1, 20, "Pak do Controle Ruim", text_alpha | 0xc0000000);
     }
     else if (MenuItem == Menu_ControllerPakFull)
     {
-        ST_DrawString(-1, 20, "Pak de Controle Cheio", text_alpha | 0xc0000000);
+        ST_DrawString(-1, 20, "Pak do Controle Cheio", text_alpha | 0xc0000000);
     }
     else if (MenuItem == Menu_CreateNote)
     {
@@ -2181,63 +2187,63 @@ void M_FeaturesDrawer(void) // 800091C0
         text = textbuff;
         switch(item->casepos)
         {
-            case 23: /* TRANSPORTAR PARA NÍVEL */
+            case 23: /* WARP TO LEVEL */
                 sprintf(textbuff, "%s", MapInfo[m_actualmap].name);
                 break;
-            case 24: /* INVULNERÁVEL */
-                text = (!(players[0].cheats & CF_GODMODE)) ? "DESLIGADO": "LIGADO";
+            case 24: /* INVULNERABLE */
+                text = (!(players[0].cheats & CF_GODMODE)) ? "DESLIGADO" : "LIGADO";
                 break;
-            case 25: /* AUMENTO DE SAÚDE */
+            case 25: /* HEALTH BOOST */
                 text = (!(players[0].cheats & CF_HEALTH)) ? "-" : "100%";
                 break;
-            case 26: /* CHAVES DE SEGURANÇA */
+            case 26: /* SECURITY KEYS */
                 text = (!(players[0].cheats & CF_ALLKEYS)) ? "-" : "100%";
                 break;
-            case 27: /* ARMAS */
+            case 27: /* WEAPONS */
                 text = (!(players[0].cheats & CF_WEAPONS)) ? "-" : "100%";
                 break;
-            case 28: /* Sair */
+            case 28: /* Exit */
                 break;
             case 29: /* DEBUG */
-                text = (!(players[0].cheats & CF_DEBUG)) ? "DESLIGADO": "LIGADO";
+                text = (!(players[0].cheats & CF_DEBUG)) ? "DESLIGADO" : "LIGADO";
                 break;
-            case 30: /* TESTE DE TEXTURAS */
-                text = (!(players[0].cheats & CF_TEX_TEST)) ? "DESLIGADO": "LIGADO";
+            case 30: /* TEXTURE TEST */
+                text = (!(players[0].cheats & CF_TEX_TEST)) ? "DESLIGADO" : "LIGADO";
                 break;
-            case 31: /* BLOQUEIO DE PAREDES */
-                text = (!(players[0].cheats & CF_WALLBLOCKING)) ? "LIGADO": "DESLIGADO";
+            case 31: /* WALL BLOCKING */
+                text = (!(players[0].cheats & CF_WALLBLOCKING)) ? "LIGADO" : "DESLIGADO";
                 break;
-            case 35: /* BLOQUEAR MONSTROS */
-                text = (!(players[0].cheats & CF_LOCKMOSTERS)) ? "DESLIGADO": "LIGADO";
+            case 35: /* LOCK MONSTERS */
+                text = (!(players[0].cheats & CF_LOCKMOSTERS)) ? "DESLIGADO" : "LIGADO";
                 break;
-            case 36: /* CAPTURA DE TELA */
-                text = (!(players[0].cheats & CF_SCREENSHOT)) ? "DESLIGADO": "LIGADO";
+            case 36: /* SCREENSHOT */
+                text = (!(players[0].cheats & CF_SCREENSHOT)) ? "DESLIGADO" : "LIGADO";
                 break;
-            case 37: /* MAPEAR TUDO */
-                text = (!(players[0].cheats & CF_ALLMAP)) ? "DESLIGADO": "LIGADO";
+            case 37: /* MAP EVERYTHING */
+                text = (!(players[0].cheats & CF_ALLMAP)) ? "DESLIGADO" : "LIGADO";
                 break;
             case 38: /* MACRO PEEK */
-                text = ((players[0].cheats & CF_MACROPEEK)) ? "LIGADO": "DESLIGADO";
+                text = ((players[0].cheats & CF_MACROPEEK)) ? "LIGADO" : "DESLIGADO";
                 break;
-            case 39: /* TESTE DE MÚSICA */
+            case 39: /* MUSIC TEST */
                 sprintf(textbuff, "%d", MusicID);
                 break;
 
-            // [GEC] NOVOS CÓDIGOS DE TRAPAÇA
-            case 48: /* CORES */
-                text = (!(players[0].cheats & CF_NOCOLORS)) ? "LIGADO": "DESLIGADO";
+            // [GEC] NOVOS CÓDIGOS DE TRAPAcA
+            case 48: /* COLORS */
+                text = (!(players[0].cheats & CF_NOCOLORS)) ? "LIGADO" : "DESLIGADO";
                 break;
 
-            case 49: /* BRILHO TOTAL */
-                text = (!(players[0].cheats & CF_FULLBRIGHT)) ? "DESLIGADO": "LIGADO";
+            case 49: /* FULL BRIGHT */
+                text = (!(players[0].cheats & CF_FULLBRIGHT)) ? "DESLIGADO" : "LIGADO";
                 break;
 
-            case 68: /* CORREÇÃO DE GAMMA */
-                text = (!(players[0].cheats & CF_GAMMA)) ? "DESLIGADO": "LIGADO";
+            case 68: /* Gamma Correction */
+                text = (!(players[0].cheats & CF_GAMMA)) ? "DESLIGADO" : "LIGADO";
                 break;
-            
+
             default:
-                text = ""; // [Immorpher] definido como vazio para o menu de créditos
+                text = ""; // [Immorpher] definido como nulo para o menu de créditos
                 break;
         }
 
@@ -2254,7 +2260,7 @@ void M_CreditsDrawer(void) // 800091C0
     menuitem_t *item;
     int i;
 
-    ST_DrawString(-1, 20, "Creditos Implacaveis", text_alpha | 0xc0000000);
+    ST_DrawString(-1, 20, "Creditos", text_alpha | 0xc0000000);
     item = MenuItem;
 
     for(i = 0; i < itemlines; i++)
@@ -2307,7 +2313,7 @@ void M_MovementDrawer(void) // 80009738
     {
         casepos = item->casepos;
 		
-        if (casepos == 12) // [Immorpher] Autorun
+		if (casepos == 12) // [Immorpher] Autorun
         {
             if (Autorun)
                 text = "Ligado";
@@ -2352,13 +2358,13 @@ void M_VideoDrawer(void) // 80009884
     {
         casepos = item->casepos;
 		
-        if (casepos == 50) // [GEC e Immorpher] Novo filtro de video
+        if (casepos == 50) // [GEC and Immorpher] New video filter
         {
             if (VideoFilter == 0)
                 text = "Ligado";
             else
                 text = "Desligado";
-        }
+        }		
         else if (casepos == 54) // [Immorpher] Anti-Aliasing
         {
             if (antialiasing)
@@ -2366,21 +2372,21 @@ void M_VideoDrawer(void) // 80009884
             else
                 text = "Desligado";
         }
-        else if (casepos == 55) // [Immorpher] Entrelaçamento
+        else if (casepos == 55) // [Immorpher] Interlacing
         {
             if (interlacing)
                 text = "Ligado";
             else
                 text = "Desligado";
         }
-        else if (casepos == 53) // [Immorpher] Filtro Dither
+        else if (casepos == 53) // [Immorpher] Dither Filter
         {
             if (DitherFilter)
                 text = "Ligado";
             else
                 text = "Desligado";
         }
-        else if (casepos == 56) // [Immorpher] Filtro Dither
+        else if (casepos == 56) // [Immorpher] Dither Filter
         {
             if (ColorDither == 1)
                 text = "Quadrado";
@@ -2416,7 +2422,7 @@ void M_DisplayDrawer(void) // 80009884
     menuitem_t *item;
     int i, casepos;
 
-    ST_DrawString(-1, 20, "Exibicao", text_alpha | 0xc0000000);
+    ST_DrawString(-1, 20, "Tela", text_alpha | 0xc0000000);
 
     item = Menu_Display;
 
@@ -2424,14 +2430,14 @@ void M_DisplayDrawer(void) // 80009884
     {
         casepos = item->casepos;
 
-        if (casepos == 61) // Texto da Historia:
+        if (casepos == 61) // Story Text:
         {
             if (StoryText)
                 text = "Ligado";
             else
                 text = "Desligado";
         }
-        else if (casepos == 62) // Estatisticas do Mapa:
+        else if (casepos == 62) // Map stats:
         {
             if (MapStats)
                 text = "Ligado";
@@ -2472,14 +2478,14 @@ void M_StatusHUDDrawer(void) // 80009884
     {
         casepos = item->casepos;
 
-        if (casepos == 33) // Mensagens:
+        if (casepos == 33) // Messages:
         {
             if (enable_messages)
                 text = "Ligado";
             else
                 text = "Desligado";
         }
-        else if (casepos == 67) // HUD Colorido:
+        else if (casepos == 67) // Colored HUD:
         {
             if (ColoredHUD)
                 text = "Ligado";
@@ -3410,8 +3416,8 @@ int M_CenterDisplayTicker(void) // 8000B4C4
 
 void M_CenterDisplayDrawer(void) // 8000B604
 {
-    ST_DrawString(-1, 20, "Centralizar Exibicao", text_alpha | 0xc0000000);
-    ST_DrawString(-1, 114, "use gamepad para ajustar", text_alpha | 0xffffff00);
+    ST_DrawString(-1, 20, "Centralizar Display", text_alpha | 0xc0000000);
+    ST_DrawString(-1, 114, "use o controle para ajustar", text_alpha | 0xffffff00);
     ST_DrawString(-1, 210, "pressione \x8d para sair", text_alpha | 0xffffff00);
 }
 
@@ -3575,8 +3581,7 @@ void M_ControlPadDrawer(void) // 8000B988
     int lpos;
     char **text;
     char buffer [64];
-    ST_DrawString(-1, 20, "Gamepad", text_alpha | 0xc0000000);
-
+    ST_DrawString(-1, 20, "Controle", text_alpha | 0xc0000000);
     if (linepos < (linepos + 6))
     {
         text = &ControlText[linepos];
@@ -3592,7 +3597,7 @@ void M_ControlPadDrawer(void) // 8000B988
             }
             if (ConfgNumb==6 && lpos == 0) // jnmartin84 If statement for custom controller config
             {
-                sprintf(buffer, "Configuracao Personalizada");
+                sprintf(buffer, "Configurao Personalizada");
             }
             else if (ConfgNumb==5 && lpos == 0) // [Immorpher] If statement for new retro fighters
             {

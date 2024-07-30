@@ -87,7 +87,14 @@ void D_DrawLegal(void)
 {
 	I_ClearFrame();
 
-	M_DrawBackground(27, 74, text_alpha, "USLEGAL", 0.00015f, 0);
+	ST_DrawString(40, 20, "PORT BY: JNMARTIN84", text_alpha | 0xffffff00);
+	ST_DrawString(40, 50, "VERSAO PT-BR 0.1", text_alpha | 0xffffff00);
+	ST_DrawString(40, 70, "TRADUZIDO POR:", text_alpha | 0xffffff00);
+	ST_DrawString(40, 100, "COSTENARO PLAY", text_alpha | 0xffffff00);
+	ST_DrawString(40, 120, "DRASGON DIGGER", text_alpha | 0xffffff00);
+	ST_DrawString(40, 140, "DREAMQUEST5784", text_alpha | 0xffffff00);
+	ST_DrawString(40, 160, "ESTACAO FICCAO", text_alpha | 0xffffff00);
+	ST_DrawString(40, 180, "NAI ADVENTURE", text_alpha | 0xffffff00);
 
 	if (FilesUsed > -1) {
 		ST_DrawString(-1, 200, "segure \x8d para gerenciar o pak", text_alpha | 0xffffff00);
