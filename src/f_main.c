@@ -26,6 +26,7 @@
 #define C_INTRO_TXT17	"terror, a missao e clara..."
 #define C_INTRO_TXT18	" "
 #define C_INTRO_TXT19	"EXTERMINIO IMPLACAVEL!"
+#define C_INTRO_TXT20	"EXTERMINIO SEM MISERICORDIA!"
 
 #define C_END1_TXT01	"Voce ri enquanto a"
 #define C_END1_TXT02	"familiaridade da"

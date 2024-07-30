@@ -352,111 +352,99 @@ void P_TouchSpecialThing (mobj_t *special, mobj_t *toucher) // 80014810
 		message = "Pegou um foguete.";
 		break;
 	case MT_AMMO_ROCKETBOX:
-		if (!P_GiveAmmo(player, am_misl, 5))
+		if (!P_GiveAmmo (player, am_misl,5))
 			return;
 		message = "Pegou uma caixa de foguetes.";
 		break;
-
 	case MT_AMMO_CELL:
-		if (!P_GiveAmmo(player, am_cell, 1))
+		if (!P_GiveAmmo (player, am_cell,1))
 			return;
 		message = "Pegou uma celula de energia.";
 		break;
-
 	case MT_AMMO_CELLPACK:
-		if (!P_GiveAmmo(player, am_cell, 5))
+		if (!P_GiveAmmo (player, am_cell,5))
 			return;
 		message = "Pegou um pacote de celulas de energia.";
 		break;
-
 	case MT_AMMO_SHELL:
-		if (!P_GiveAmmo(player, am_shell, 1))
+		if (!P_GiveAmmo (player, am_shell,1))
 			return;
 		if (gameskill == sk_baby)
 			message = "Pegou 8 balas de espingarda.";
-		else if (gameskill == sk_nightmare) // [Immorpher e GEC] Aumento de municao no pesadelo!
+		else if (gameskill == sk_nightmare) // [Immorpher and GEC] Nightmare ammo boost!
 			message = "Pegou 6 balas de espingarda.";
 		else
 			message = "Pegou 4 balas de espingarda.";
 		break;
-
 	case MT_AMMO_SHELLBOX:
-		if (!P_GiveAmmo(player, am_shell, 5))
+		if (!P_GiveAmmo (player, am_shell,5))
 			return;
 		message = "Pegou uma caixa de balas de espingarda.";
 		break;
-
 	case MT_AMMO_BACKPACK:
 		if (!player->backpack)
 		{
-			for (i = 0; i < NUMAMMO; i++)
+			for (i=0 ; i<NUMAMMO ; i++)
 				player->maxammo[i] *= 2;
 			player->backpack = true;
 		}
-		for (i = 0; i < NUMAMMO; i++)
-			P_GiveAmmo(player, i, 1);
+		for (i=0 ; i<NUMAMMO ; i++)
+			P_GiveAmmo (player, i, 1);
 		message = "Voce pegou a mochila!";
 		break;
 
 
 	/* */
-    /* weapons */
-    /* */
-    case MT_WEAP_BFG:
-        if (!P_GiveWeapon(player, wp_bfg, false))
-            return;
-        message = "Voce pegou o BFG9000! Oh, sim.";
-        sound = sfx_sgcock;
-        break;
-
-    case MT_WEAP_CHAINGUN:
-        if (!P_GiveWeapon(player, wp_chaingun, special->flags & MF_DROPPED))
-            return;
-        message = "Voce pegou a metralhadora!";
-        sound = sfx_sgcock;
-        break;
-
-    case MT_WEAP_CHAINSAW:
-        if (!P_GiveWeapon(player, wp_chainsaw, false))
-            return;
-        message = "Uma serra! Encontre alguma carne!";
-        sound = sfx_sgcock;
-        break;
-
-    case MT_WEAP_LAUNCHER:
-        if (!P_GiveWeapon(player, wp_missile, false))
-            return;
-        message = "Voce pegou o lancador de foguetes!";
-        sound = sfx_sgcock;
-        break;
-
-    case MT_WEAP_PLASMA:
-        if (!P_GiveWeapon(player, wp_plasma, false))
-            return;
-        message = "Voce pegou a arma de plasma!";
-        sound = sfx_sgcock;
-        break;
-
-    case MT_WEAP_SHOTGUN:
-        if (!P_GiveWeapon(player, wp_shotgun, special->flags & MF_DROPPED))
-            return;
-        message = "Voce pegou a espingarda!";
-        sound = sfx_sgcock;
-        break;
-
-    case MT_WEAP_SSHOTGUN:
-        if (!P_GiveWeapon(player, wp_supershotgun, special->flags & MF_DROPPED))
-            return;
-        message = "Voce pegou a super espingarda!";
-        sound = sfx_sgcock;
-        break;
-
-    case MT_WEAP_LCARBINE:
-        if (!P_GiveWeapon(player, wp_laser, false))
-            return;
-        message = "O que diabos e isso!";
-        sound = sfx_sgcock;
-        break;
+	/* weapons */
+	/* */
+	case MT_WEAP_BFG:
+		if (!P_GiveWeapon (player, wp_bfg, false) )
+			return;
+		message = "Voce pegou o BFG9000! Oh, sim.";
+		sound = sfx_sgcock;
+		break;
+	case MT_WEAP_CHAINGUN:
+		if (!P_GiveWeapon (player, wp_chaingun, special->flags&MF_DROPPED) )
+			return;
+		message = "Voce pegou a metralhadora!";
+		sound = sfx_sgcock;
+		break;
+	case MT_WEAP_CHAINSAW:
+		if (!P_GiveWeapon (player, wp_chainsaw, false) )
+			return;
+		message = "Uma serra! Encontre alguma carne!";
+		sound = sfx_sgcock;
+		break;
+	case MT_WEAP_LAUNCHER:
+		if (!P_GiveWeapon (player, wp_missile, false) )
+			return;
+		 message = "Voce pegou o lancador de foguetes!";
+		sound = sfx_sgcock;
+		break;
+	case MT_WEAP_PLASMA:
+		if (!P_GiveWeapon (player, wp_plasma, false) )
+			return;
+		message = "Voce pegou a arma de plasma!";
+		sound = sfx_sgcock;
+		break;
+	case MT_WEAP_SHOTGUN:
+		if (!P_GiveWeapon (player, wp_shotgun, special->flags&MF_DROPPED ) )
+			return;
+		message = "Voce pegou a espingarda!";
+		sound = sfx_sgcock;
+		break;
+	case MT_WEAP_SSHOTGUN:
+		if (!P_GiveWeapon(player, wp_supershotgun, special->flags&MF_DROPPED))
+			return;
+		message = "Voce pegou a super espingarda!";
+		sound = sfx_sgcock;
+		break;
+	case MT_WEAP_LCARBINE:
+		if (!P_GiveWeapon(player, wp_laser, false))
+			return;
+		message = "O que diabos e isso!";
+		sound = sfx_sgcock;
+		break;
 
     /* */
     /* armor */
@@ -575,19 +563,19 @@ void P_TouchSpecialThing (mobj_t *special, mobj_t *toucher) // 80014810
         sound = sfx_powerup;
         break;
 
-    /* */
-    /* artifacts */
-    /* */
-    case MT_ITEM_ARTIFACT1:
-    case MT_ITEM_ARTIFACT2:
-    case MT_ITEM_ARTIFACT3:
+	/* */
+	/* artifacts */
+	/* */
+	case MT_ITEM_ARTIFACT1:
+	case MT_ITEM_ARTIFACT2:
+	case MT_ITEM_ARTIFACT3:
 
-        artflag = 1 << ((special->type + 7) & 0x1f);
+		artflag = 1 << ((special->type + 7) & 0x1f);
 
-        if ((player->artifacts & artflag))
-            return;
+		if ((player->artifacts & artflag))
+			return;
 
-        player->artifacts |= artflag;
+		player->artifacts |= artflag;
 
         if (ArtifactLookupTable[player->artifacts] == 1) { /* ART_FAST */
             message = "Voce tem a sensacao de que";
@@ -602,17 +590,17 @@ void P_TouchSpecialThing (mobj_t *special, mobj_t *toucher) // 80014810
 
         sound = sfx_powerup;
         break;
+	/* */
+	/* fake item */
+	/* */
+	case MT_FAKEITEM:
+		goto runtrigger;
+		break;
 
-    /* */
-    /* fake item */
-    /* */
-    case MT_FAKEITEM:
-        goto runtrigger;
-        break;
-
-    default:
-        I_Error("P_SpecialThing: Coisa obtida desconhecida"); // Restaurado
-        break;
+	default:
+		I_Error("P_SpecialThing: Unknown gettable thing"); // Restored
+		break;
+	}
 
 	if (message2) { // [Immorpher] double message!
 		// Dump current message into third

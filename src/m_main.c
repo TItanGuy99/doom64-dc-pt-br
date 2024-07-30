@@ -119,15 +119,6 @@ char *ControlText[] =   //8007517C
 #define M_TXT83    "ISANN KEKET"   // [Immorpher] Créditos
 #define M_TXT84    "NEVANDER"   // [Immorpher] Créditos
 
-// Créditos tradução PT-BR
-#define M_TXT85    "CANAL COSTENARO PLAY"
-#define M_TXT86    "CANAL DRASGON DIGGER"
-#define M_TXT87    "CANAL DREAMQUEST5784"
-#define M_TXT88    "CANAL ESTACAO FICCAO"  
-#define M_TXT89    "CANAL NAI ADVENTURE" 
-
-
-
 char *MenuText[] =   // 8005ABA0
 {
     M_TXT00, M_TXT01, M_TXT02, M_TXT03, M_TXT04,
@@ -147,7 +138,6 @@ char *MenuText[] =   // 8005ABA0
 	M_TXT70, M_TXT71, M_TXT72, M_TXT73, M_TXT74,
     M_TXT75, M_TXT76, M_TXT77, M_TXT78, M_TXT79,
 	M_TXT80, M_TXT81, M_TXT82, M_TXT83, M_TXT84,
-    M_TXT85, M_TXT86, M_TXT87, M_TXT88, M_TXT89
 };
 
 #define NUM_MENU_TITLE 3
