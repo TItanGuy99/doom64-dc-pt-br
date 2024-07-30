@@ -437,7 +437,7 @@ void F_DrawerIntermission(void) // 80002F14
 	//gDPSetFillColor(GFX1++, GPACK_RGBA5551(0,0,0,0) << 16 | GPACK_RGBA5551(0,0,0,0)) ;
 	//gDPFillRectangle(GFX1++, 0, 0, SCREEN_WD-1, SCREEN_HT-1);
 
-	M_DrawBackground(63, 25, 128, "MAL", 0.00015f, 0);
+	M_DrawBackground(63, 25, 128, "EVIL", 0.00015f, 0);
 
 	ypos = textypos;
 	for(i = 0; i < textline; i++)
@@ -826,7 +826,7 @@ void F_Drawer(void) // 800039DC
 			break;
 
 		case F_STAGE_CAST:
-			M_DrawBackground(63, 25, fadeinout, "MAL", 0.00015f, 0);
+			M_DrawBackground(63, 25, fadeinout, "EVIL", 0.00015f, 0);
 
 			type = castorder[castnum].type;
 
