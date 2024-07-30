@@ -299,7 +299,7 @@ void P_TouchSpecialThing (mobj_t *special, mobj_t *toucher) // 80014810
 		if (player->health > 200)
 			player->health = 200;
 		player->mo->health = player->health;
-		message = "You pick up a health bonus.";
+		message = "Voce pegou um bonus de saude.";
 		break;
 	case MT_ITEM_BONUSARMOR:
 		player->armorpoints+=2;		/* can go over 100% */
@@ -307,21 +307,21 @@ void P_TouchSpecialThing (mobj_t *special, mobj_t *toucher) // 80014810
 			player->armorpoints = 200;
 		if (!player->armortype)
 			player->armortype = 1;
-		message = "You pick up an armor bonus.";
+		message = "Voce pegou um bonus de armadura.";
 		break;
 	case MT_ITEM_SOULSPHERE:
 		player->health += 100;
 		if (player->health > 200)
 			player->health = 200;
 		player->mo->health = player->health;
-		message = "Supercharge!";
+		message = "Supercarga!";
 		sound = sfx_powerup;
 		break;
 	case MT_ITEM_MEGASPHERE:
 		player->health = 200;
 		player->mo->health = 200;
 		P_GiveArmor(player, 2);
-		message = "Mega Sphere!";
+		message = "Mega Esfera!";
 		sound = sfx_powerup;
 		break;
 
@@ -339,258 +339,280 @@ void P_TouchSpecialThing (mobj_t *special, mobj_t *toucher) // 80014810
 			if (!P_GiveAmmo (player,am_clip,1))
 				return;
 		}
-		message = "Picked up a clip.";
+		message = "Pegou um clipe.";
 		break;
 	case MT_AMMO_CLIPBOX:
 		if (!P_GiveAmmo (player, am_clip,5))
 			return;
-		message = "Picked up a box of bullets.";
+		message = "Pegou uma caixa de balas.";
 		break;
 	case MT_AMMO_ROCKET:
 		if (!P_GiveAmmo (player, am_misl,1))
 			return;
-		message = "Picked up a rocket.";
+		message = "Pegou um foguete.";
 		break;
 	case MT_AMMO_ROCKETBOX:
-		if (!P_GiveAmmo (player, am_misl,5))
+		if (!P_GiveAmmo(player, am_misl, 5))
 			return;
-		message = "Picked up a box of rockets.";
+		message = "Pegou uma caixa de foguetes.";
 		break;
+
 	case MT_AMMO_CELL:
-		if (!P_GiveAmmo (player, am_cell,1))
+		if (!P_GiveAmmo(player, am_cell, 1))
 			return;
-		message = "Picked up an energy cell.";
+		message = "Pegou uma celula de energia.";
 		break;
+
 	case MT_AMMO_CELLPACK:
-		if (!P_GiveAmmo (player, am_cell,5))
+		if (!P_GiveAmmo(player, am_cell, 5))
 			return;
-		message = "Picked up an energy cell pack.";
+		message = "Pegou um pacote de celulas de energia.";
 		break;
+
 	case MT_AMMO_SHELL:
-		if (!P_GiveAmmo (player, am_shell,1))
+		if (!P_GiveAmmo(player, am_shell, 1))
 			return;
 		if (gameskill == sk_baby)
-			message = "Picked up 8 shotgun shells.";
-		else if (gameskill == sk_nightmare) // [Immorpher and GEC] Nightmare ammo boost!
-			message = "Picked up 6 shotgun shells.";
+			message = "Pegou 8 balas de espingarda.";
+		else if (gameskill == sk_nightmare) // [Immorpher e GEC] Aumento de municao no pesadelo!
+			message = "Pegou 6 balas de espingarda.";
 		else
-			message = "Picked up 4 shotgun shells.";
+			message = "Pegou 4 balas de espingarda.";
 		break;
+
 	case MT_AMMO_SHELLBOX:
-		if (!P_GiveAmmo (player, am_shell,5))
+		if (!P_GiveAmmo(player, am_shell, 5))
 			return;
-		message = "Picked up a box of shotgun shells.";
+		message = "Pegou uma caixa de balas de espingarda.";
 		break;
+
 	case MT_AMMO_BACKPACK:
 		if (!player->backpack)
 		{
-			for (i=0 ; i<NUMAMMO ; i++)
+			for (i = 0; i < NUMAMMO; i++)
 				player->maxammo[i] *= 2;
 			player->backpack = true;
 		}
-		for (i=0 ; i<NUMAMMO ; i++)
-			P_GiveAmmo (player, i, 1);
-		message = "You got the backpack!";
+		for (i = 0; i < NUMAMMO; i++)
+			P_GiveAmmo(player, i, 1);
+		message = "Voce pegou a mochila!";
 		break;
 
 
 	/* */
-	/* weapons */
-	/* */
-	case MT_WEAP_BFG:
-		if (!P_GiveWeapon (player, wp_bfg, false) )
-			return;
-		message = "You got the BFG9000!  Oh, yes.";
-		sound = sfx_sgcock;
-		break;
-	case MT_WEAP_CHAINGUN:
-		if (!P_GiveWeapon (player, wp_chaingun, special->flags&MF_DROPPED) )
-			return;
-		message = "You got the chaingun!";
-		sound = sfx_sgcock;
-		break;
-	case MT_WEAP_CHAINSAW:
-		if (!P_GiveWeapon (player, wp_chainsaw, false) )
-			return;
-		message = "A chainsaw!  Find some meat!";
-		sound = sfx_sgcock;
-		break;
-	case MT_WEAP_LAUNCHER:
-		if (!P_GiveWeapon (player, wp_missile, false) )
-			return;
-		message = "You got the rocket launcher!";
-		sound = sfx_sgcock;
-		break;
-	case MT_WEAP_PLASMA:
-		if (!P_GiveWeapon (player, wp_plasma, false) )
-			return;
-		message = "You got the plasma gun!";
-		sound = sfx_sgcock;
-		break;
-	case MT_WEAP_SHOTGUN:
-		if (!P_GiveWeapon (player, wp_shotgun, special->flags&MF_DROPPED ) )
-			return;
-		message = "You got the shotgun!";
-		sound = sfx_sgcock;
-		break;
-	case MT_WEAP_SSHOTGUN:
-		if (!P_GiveWeapon(player, wp_supershotgun, special->flags&MF_DROPPED))
-			return;
-		message = "You got the super shotgun!";
-		sound = sfx_sgcock;
-		break;
-	case MT_WEAP_LCARBINE:
-		if (!P_GiveWeapon(player, wp_laser, false))
-			return;
-		message = "What the !@#%* is this!";
-		sound = sfx_sgcock;
-		break;
+    /* weapons */
+    /* */
+    case MT_WEAP_BFG:
+        if (!P_GiveWeapon(player, wp_bfg, false))
+            return;
+        message = "Voce pegou o BFG9000! Oh, sim.";
+        sound = sfx_sgcock;
+        break;
 
-		/* */
-		/* armor */
-		/* */
-	case MT_ITEM_ARMOR1:
-		if (!P_GiveArmor(player, 1))
-			return;
-		message = "You pick up the armor.";
-		break;
+    case MT_WEAP_CHAINGUN:
+        if (!P_GiveWeapon(player, wp_chaingun, special->flags & MF_DROPPED))
+            return;
+        message = "Voce pegou a metralhadora!";
+        sound = sfx_sgcock;
+        break;
 
-	case MT_ITEM_ARMOR2:
-		if (!P_GiveArmor(player, 2))
-			return;
-		message = "You got the MegaArmor!";
-		break;
+    case MT_WEAP_CHAINSAW:
+        if (!P_GiveWeapon(player, wp_chainsaw, false))
+            return;
+        message = "Uma serra! Encontre alguma carne!";
+        sound = sfx_sgcock;
+        break;
 
-	/* */
-	/* cards */
-	/* leave cards for everyone */
-	/* */
-	case MT_ITEM_BLUECARDKEY:
-		if (!player->cards[it_bluecard])
-			message = "You pick up a blue keycard.";
-		P_GiveCard(player, it_bluecard);
-		break;
-	case MT_ITEM_REDCARDKEY:
-		if (!player->cards[it_redcard])
-			message = "You pick up a red keycard.";
-		P_GiveCard(player, it_redcard);
-		break;
-	case MT_ITEM_YELLOWCARDKEY:
-		if (!player->cards[it_yellowcard])
-			message = "You pick up a yellow keycard.";
-		P_GiveCard(player, it_yellowcard);
-		break;
-	case MT_ITEM_BLUESKULLKEY:
-		if (!player->cards[it_blueskull])
-			message = "You pick up a blue skull key.";
-		P_GiveCard(player, it_blueskull);
-		break;
-	case MT_ITEM_REDSKULLKEY:
-		if (!player->cards[it_redskull])
-			message = "You pick up a red skull key.";
-		P_GiveCard(player, it_redskull);
-		break;
-	case MT_ITEM_YELLOWSKULLKEY:
-		if (!player->cards[it_yellowskull])
-			message = "You pick up a yellow skull key.";
-		P_GiveCard(player, it_yellowskull);
-		break;
+    case MT_WEAP_LAUNCHER:
+        if (!P_GiveWeapon(player, wp_missile, false))
+            return;
+        message = "Voce pegou o lancador de foguetes!";
+        sound = sfx_sgcock;
+        break;
 
-	/* */
-	/* heals */
-	/* */
-	case MT_ITEM_STIMPACK:
-		if (!P_GiveBody(player, 10))
-			return;
-		message = "You pick up a stimpack.";
-		break;
-	case MT_ITEM_MEDKIT:
-		if (!P_GiveBody(player, 25))
-			return;
-		if (player->health < 50) { // [Immorpher] Fix! If your resultant health is below 50 then you really needed it!
-			message = "You pick up a medikit";
-			message2 = "that you REALLY need!";
-		}
-		else
-			message = "You pick up a medikit.";
-		break;
+    case MT_WEAP_PLASMA:
+        if (!P_GiveWeapon(player, wp_plasma, false))
+            return;
+        message = "Voce pegou a arma de plasma!";
+        sound = sfx_sgcock;
+        break;
 
-	/* */
-	/* power ups */
-	/* */
-	case MT_ITEM_INVULSPHERE:
-		P_GivePower(player, pw_invulnerability);
-		message = "Invulnerability!";
-		sound = sfx_powerup;
-		break;
-	case MT_ITEM_BERSERK:
-		P_GivePower(player, pw_strength);
-		message = "Berserk!";
-		if (player->readyweapon != wp_fist)
-			player->pendingweapon = wp_fist;
-		sound = sfx_powerup;
-		break;
-	case MT_ITEM_INVISSPHERE:
-		P_GivePower(player, pw_invisibility);
-		message = "Partial Invisibility!";
-		sound = sfx_powerup;
-		break;
-	case MT_ITEM_RADSPHERE:
-		P_GivePower(player, pw_ironfeet);
-		message = "Radiation Shielding Suit";
-		sound = sfx_powerup;
-		break;
-	case MT_ITEM_AUTOMAP:
-		if (!P_GivePower(player, pw_allmap))
-			return;
-		message = "Computer Area Map";
-		sound = sfx_powerup;
-		break;
-	case MT_ITEM_PVIS:
-		P_GivePower(player, pw_infrared);
-		message = "Light Amplification Goggles";
-		sound = sfx_powerup;
-		break;
+    case MT_WEAP_SHOTGUN:
+        if (!P_GiveWeapon(player, wp_shotgun, special->flags & MF_DROPPED))
+            return;
+        message = "Voce pegou a espingarda!";
+        sound = sfx_sgcock;
+        break;
 
-	/* */
-	/* artifacts */
-	/* */
-	case MT_ITEM_ARTIFACT1:
-	case MT_ITEM_ARTIFACT2:
-	case MT_ITEM_ARTIFACT3:
+    case MT_WEAP_SSHOTGUN:
+        if (!P_GiveWeapon(player, wp_supershotgun, special->flags & MF_DROPPED))
+            return;
+        message = "Voce pegou a super espingarda!";
+        sound = sfx_sgcock;
+        break;
 
-		artflag = 1 << ((special->type + 7) & 0x1f);
+    case MT_WEAP_LCARBINE:
+        if (!P_GiveWeapon(player, wp_laser, false))
+            return;
+        message = "O que diabos e isso!";
+        sound = sfx_sgcock;
+        break;
 
-		if ((player->artifacts & artflag))
-			return;
+    /* */
+    /* armor */
+    /* */
+    case MT_ITEM_ARMOR1:
+        if (!P_GiveArmor(player, 1))
+            return;
+        message = "Voce pegou a armadura.";
+        break;
 
-		player->artifacts |= artflag;
+    case MT_ITEM_ARMOR2:
+        if (!P_GiveArmor(player, 2))
+            return;
+        message = "Voce pegou a MegaArmadura!";
+        break;
 
-		if (ArtifactLookupTable[player->artifacts] == 1) { /* ART_FAST */
-			message = "You have a feeling that it";
-			message2 = "wasn't to be touched...";
-		}
-		else if (ArtifactLookupTable[player->artifacts] == 2) { /* ART_TRIPLE */
-			message = "Whatever it is, it doesn't";
-			message2 = "belong in this world...";
-		}
-		else /* ART_DOUBLE */
-			message = "It must do something...";
+    /* */
+    /* cards */
+    /* leave cards for everyone */
+    /* */
+    case MT_ITEM_BLUECARDKEY:
+        if (!player->cards[it_bluecard])
+            message = "Voce pegou um cartao-chave azul.";
+        P_GiveCard(player, it_bluecard);
+        break;
 
-		sound = sfx_powerup;
-		break;
+    case MT_ITEM_REDCARDKEY:
+        if (!player->cards[it_redcard])
+            message = "Voce pegou um cartao-chave vermelho.";
+        P_GiveCard(player, it_redcard);
+        break;
 
-	/* */
-	/* fake item */
-	/* */
-	case MT_FAKEITEM:
-		goto runtrigger;
-		break;
+    case MT_ITEM_YELLOWCARDKEY:
+        if (!player->cards[it_yellowcard])
+            message = "Voce pegou um cartao-chave amarelo.";
+        P_GiveCard(player, it_yellowcard);
+        break;
 
-	default:
-		I_Error("P_SpecialThing: Unknown gettable thing"); // Restored
-		break;
-	}
+    case MT_ITEM_BLUESKULLKEY:
+        if (!player->cards[it_blueskull])
+            message = "Voce pegou uma chave de cranio azul.";
+        P_GiveCard(player, it_blueskull);
+        break;
+
+    case MT_ITEM_REDSKULLKEY:
+        if (!player->cards[it_redskull])
+            message = "Voce pegou uma chave de cranio vermelho.";
+        P_GiveCard(player, it_redskull);
+        break;
+
+    case MT_ITEM_YELLOWSKULLKEY:
+        if (!player->cards[it_yellowskull])
+            message = "Voce pegou uma chave de cranio amarelo.";
+        P_GiveCard(player, it_yellowskull);
+        break;
+
+    /* */
+    /* heals */
+    /* */
+    case MT_ITEM_STIMPACK:
+        if (!P_GiveBody(player, 10))
+            return;
+        message = "Voce pegou um estimulante.";
+        break;
+
+    case MT_ITEM_MEDKIT:
+        if (!P_GiveBody(player, 25))
+            return;
+        if (player->health < 50) { // [Immorpher] Correcao! Se sua saude resultante estiver abaixo de 50, entao voce realmente precisava disso!
+            message = "Voce pegou um kit medico";
+            message2 = "que voce REALMENTE precisava!";
+        }
+        else
+            message = "Voce pegou um kit medico.";
+        break;
+
+    /* */
+    /* power ups */
+    /* */
+    case MT_ITEM_INVULSPHERE:
+        P_GivePower(player, pw_invulnerability);
+        message = "Invulnerabilidade!";
+        sound = sfx_powerup;
+        break;
+
+    case MT_ITEM_BERSERK:
+        P_GivePower(player, pw_strength);
+        message = "Frenesi!";
+        if (player->readyweapon != wp_fist)
+            player->pendingweapon = wp_fist;
+        sound = sfx_powerup;
+        break;
+
+    case MT_ITEM_INVISSPHERE:
+        P_GivePower(player, pw_invisibility);
+        message = "Invisibilidade Parcial!";
+        sound = sfx_powerup;
+        break;
+
+    case MT_ITEM_RADSPHERE:
+        P_GivePower(player, pw_ironfeet);
+        message = "Traje de Protecao Contra Radiacao";
+        sound = sfx_powerup;
+        break;
+
+    case MT_ITEM_AUTOMAP:
+        if (!P_GivePower(player, pw_allmap))
+            return;
+        message = "Mapa da Area Computadorizado";
+        sound = sfx_powerup;
+        break;
+
+    case MT_ITEM_PVIS:
+        P_GivePower(player, pw_infrared);
+        message = "Oculos de Ampliacao de Luz";
+        sound = sfx_powerup;
+        break;
+
+    /* */
+    /* artifacts */
+    /* */
+    case MT_ITEM_ARTIFACT1:
+    case MT_ITEM_ARTIFACT2:
+    case MT_ITEM_ARTIFACT3:
+
+        artflag = 1 << ((special->type + 7) & 0x1f);
+
+        if ((player->artifacts & artflag))
+            return;
+
+        player->artifacts |= artflag;
+
+        if (ArtifactLookupTable[player->artifacts] == 1) { /* ART_FAST */
+            message = "Voce tem a sensacao de que";
+            message2 = "nao era para ser tocado...";
+        }
+        else if (ArtifactLookupTable[player->artifacts] == 2) { /* ART_TRIPLE */
+            message = "Seja o que for, nao";
+            message2 = "pertence a este mundo...";
+        }
+        else /* ART_DOUBLE */
+            message = "Deve fazer alguma coisa...";
+
+        sound = sfx_powerup;
+        break;
+
+    /* */
+    /* fake item */
+    /* */
+    case MT_FAKEITEM:
+        goto runtrigger;
+        break;
+
+    default:
+        I_Error("P_SpecialThing: Coisa obtida desconhecida"); // Restaurado
+        break;
 
 	if (message2) { // [Immorpher] double message!
 		// Dump current message into third

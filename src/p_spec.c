@@ -1015,7 +1015,7 @@ boolean P_UseSpecialLine (line_t *line, mobj_t *thing) // 800204BC
 		{
 			if(!player->cards[it_bluecard] && !player->cards[it_blueskull])
 			{
-				player->message = "You need a blue key.";
+				player->message = "Voce precisa de uma chave azul.";
 				player->messagetic = MSGTICS;
 				player->messagecolor = 0x0080ff00;
 				S_StartSound(thing, sfx_oof);
@@ -1031,7 +1031,7 @@ boolean P_UseSpecialLine (line_t *line, mobj_t *thing) // 800204BC
 		{
 			if(!player->cards[it_yellowcard] && !player->cards[it_yellowskull])
 			{
-				player->message = "You need a yellow key.";
+				player->message = "Voce precisa de uma chave amarela.";
 				player->messagetic = MSGTICS;
 				player->messagecolor = 0xC4C40000;
 				S_StartSound(thing, sfx_oof);
@@ -1047,7 +1047,7 @@ boolean P_UseSpecialLine (line_t *line, mobj_t *thing) // 800204BC
 		{
 			if(!player->cards[it_redcard] && !player->cards[it_redskull])
 			{
-				player->message = "You need a red key.";
+				player->message = "Voce precisa de uma chave vermelha.";
 				player->messagetic = MSGTICS;
 				player->messagecolor = 0xff404000;
 				S_StartSound(thing, sfx_oof);   // ?? line missing on Doom64
@@ -1068,7 +1068,7 @@ boolean P_UseSpecialLine (line_t *line, mobj_t *thing) // 800204BC
 		if ((actionType == 90 || actionType == 91 || actionType == 92) &&
 		   (((player->artifacts & 1) << ((actionType + 6) & 0x1f)) == 0))
 		{
-			player->message = "You lack the ability to activate it.";
+			player->message = "Voce nao tem a habilidade para ativar isso.";
 			player->messagetic = MSGTICS;
 			player->messagecolor = 0xC4C4C400;
 			S_StartSound(thing, sfx_oof);

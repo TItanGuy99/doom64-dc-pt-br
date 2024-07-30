@@ -61,12 +61,12 @@ void D_DrawWarning(void)
 	if (MenuAnimationTic & 1)
 		ST_DrawString(-1,  30, "WARNING!", 0xc00000ff);
 
-	ST_DrawString(-1,  60, "dreamcast controller", 0xffffffff);
-	ST_DrawString(-1,  80, "is not connected.", 0xffffffff);
-	ST_DrawString(-1, 120, "please turn off your", 0xffffffff);
-	ST_DrawString(-1, 140, "dreamcast system.", 0xffffffff);
-	ST_DrawString(-1, 180, "plug in your dreamcast", 0xffffffff);
-	ST_DrawString(-1, 200, "controller and turn it on.", 0xffffffff);
+	ST_DrawString(-1,  60, "controle dreamcast", 0xffffffff);
+	ST_DrawString(-1,  80, "nao esta conectado.", 0xffffffff);
+	ST_DrawString(-1, 120, "desligue seu", 0xffffffff);
+	ST_DrawString(-1, 140, "sistema dreamcast.", 0xffffffff);
+	ST_DrawString(-1, 180, "conecte o controle", 0xffffffff);
+	ST_DrawString(-1, 200, "dreamcast e ligue-o.", 0xffffffff);
 
 	I_DrawFrame();
 }
@@ -90,7 +90,7 @@ void D_DrawLegal(void)
 	M_DrawBackground(27, 74, text_alpha, "USLEGAL", 0.00015f, 0);
 
 	if (FilesUsed > -1) {
-		ST_DrawString(-1, 200, "hold \x8d to manage pak", text_alpha | 0xffffff00);
+		ST_DrawString(-1, 200, "segure \x8d para gerenciar o pak", text_alpha | 0xffffff00);
 	}
 
 	I_DrawFrame();
@@ -108,13 +108,13 @@ void D_DrawNoPak(void)
 {
 	I_ClearFrame();
 
-	ST_DrawString(-1,  40, "no controller pak.", 0xffffffff);
-	ST_DrawString(-1,  60, "your game cannot", 0xffffffff);
-	ST_DrawString(-1,  80, "be saved.", 0xffffffff);
-	ST_DrawString(-1, 120, "please turn off your", 0xffffffff);
-	ST_DrawString(-1, 140, "nintendo 64 system", 0xffffffff);
-	ST_DrawString(-1, 160, "before inserting a", 0xffffffff);
-	ST_DrawString(-1, 180, "controller pak.", 0xffffffff);
+	ST_DrawString(-1,  40, "sem pak de controle.", 0xffffffff);
+	ST_DrawString(-1,  60, "seu jogo nao pode", 0xffffffff);
+	ST_DrawString(-1,  80, "ser salvo.", 0xffffffff);
+	ST_DrawString(-1, 120, "desligue seu", 0xffffffff);
+	ST_DrawString(-1, 140, "sistema nintendo 64", 0xffffffff);
+	ST_DrawString(-1, 160, "antes de inserir um", 0xffffffff);
+	ST_DrawString(-1, 180, "pak de controle.", 0xffffffff);
 
 	I_DrawFrame();
 }

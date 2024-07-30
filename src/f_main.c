@@ -7,102 +7,101 @@
 #define T_NULL	        ""
 
 // [Immorpher] New introduction text adapted from Doom 64 reloaded!
-#define C_INTRO_TXT01	"Surviving the poison of evil has"
-#define C_INTRO_TXT02	"pushed sanity to an edge. The"
-#define C_INTRO_TXT03	"doctors' treatments are of little"
-#define C_INTRO_TXT04	"help. Nightmares of so many demons"
-#define C_INTRO_TXT05	"pouring through will not stop."
+#define C_INTRO_TXT01	"Sobrevivendo ao veneno do mal"
+#define C_INTRO_TXT02	"levou a sanidade ao limite. Os"
+#define C_INTRO_TXT03	"tratamentos dos medicos sao de pouco"
+#define C_INTRO_TXT04	"ajuda. Pesadelos de tantos demonios"
+#define C_INTRO_TXT05	"atravessando nao vao parar."
 #define C_INTRO_TXT06	" "
-#define C_INTRO_TXT07	"The outpost at Phobos was left dead"
-#define C_INTRO_TXT08	"in a nuclear haze. However, hell"
-#define C_INTRO_TXT09	"has reached back in. Something has"
-#define C_INTRO_TXT10	"distorted reality and resurrected"
-#define C_INTRO_TXT11	"decaying carnage back into hideous"
-#define C_INTRO_TXT12	"living tissue."
-#define C_INTRO_TXT13	" "
-#define C_INTRO_TXT14	"The mutations are devastating. The"
-#define C_INTRO_TXT15	"Demons have returned even stronger"
-#define C_INTRO_TXT16	"and more vicious than before. As"
-#define C_INTRO_TXT17	"the only one who has survived the"
-#define C_INTRO_TXT18	"horror, the mission is clear..."
-#define C_INTRO_TXT19	" "
-#define C_INTRO_TXT20	"MERCILESS EXTERMINATION!"
+#define C_INTRO_TXT07	"O posto avancado em Phobos foi deixado morto"
+#define C_INTRO_TXT08	"em uma neblina nuclear. No entanto, o inferno"
+#define C_INTRO_TXT09	"alcancou de volta. Algo distorceu a realidade e"
+#define C_INTRO_TXT10	"ressuscitou carnificina em decomposicao"
+#define C_INTRO_TXT11	"de volta a tecido horrivel."
+#define C_INTRO_TXT12	" "
+#define C_INTRO_TXT13	"As mutacoes sao devastadoras. Os"
+#define C_INTRO_TXT14	"demonios retornaram ainda mais fortes"
+#define C_INTRO_TXT15	"e mais violentos do que antes. Como"
+#define C_INTRO_TXT16	"a unica pessoa que sobreviveu ao"
+#define C_INTRO_TXT17	"terror, a missao e clara..."
+#define C_INTRO_TXT18	" "
+#define C_INTRO_TXT19	"EXTERMINIO IMPLACAVEL!"
 
-#define C_END1_TXT01	"You cackle as the"
-#define C_END1_TXT02	"familiarity of the"
-#define C_END1_TXT03	"situation occurs to you."
-#define C_END1_TXT04	"The gateway to the demons"
-#define C_END1_TXT05	"domain was too accessible."
-#define C_END1_TXT06	"You realize the demons mock"
-#define C_END1_TXT07	"you with their invitation."
-#define C_END1_TXT08	"It does not matter..."
-#define C_END1_TXT09	"The demons spawn like rats"
-#define C_END1_TXT10	"and you have the grade AAA"
-#define C_END1_TXT11	"U.A.C. poison they crave."
-#define C_END1_TXT12	"Your bloodthirsty scream"
-#define C_END1_TXT13	"shatters the teleport haze."
-#define C_END1_TXT14	"Once again you find yourself"
-#define C_END1_TXT15	"amidst..."
+#define C_END1_TXT01	"Voce ri enquanto a"
+#define C_END1_TXT02	"familiaridade da"
+#define C_END1_TXT03	"situacao lhe ocorre."
+#define C_END1_TXT04	"O portal para o dominio dos demonios"
+#define C_END1_TXT05	"era muito acessivel."
+#define C_END1_TXT06	"Voce percebe que os demonios zombam"
+#define C_END1_TXT07	"de voce com seu convite."
+#define C_END1_TXT08	"Isso nao importa..."
+#define C_END1_TXT09	"Os demonios nascem como ratos"
+#define C_END1_TXT10	"e voce tem o veneno grade AAA"
+#define C_END1_TXT11	"U.A.C. que eles desejam."
+#define C_END1_TXT12	"Seu grito sedento por sangue"
+#define C_END1_TXT13	"estilhaca a neblina de teletransporte."
+#define C_END1_TXT14	"Mais uma vez voce se encontra"
+#define C_END1_TXT15	"no meio de..."
 
-#define C_END2_TXT01	"The vast silence reminds"
-#define C_END2_TXT02	"you of the military morgue."
+#define C_END2_TXT01	"O silencio vasto lembra"
+#define C_END2_TXT02	"voce do necroterio militar."
 #define C_END2_TXT03	" "
-#define C_END2_TXT04	"You knew the installation"
-#define C_END2_TXT05	"had a classified level."
+#define C_END2_TXT04	"Voce sabia que a instalacao"
+#define C_END2_TXT05	"tinha um nivel classificado."
 #define C_END2_TXT06	" "
-#define C_END2_TXT07	"The U.A.C. had some good"
-#define C_END2_TXT08	"reason to hide this place."
+#define C_END2_TXT07	"O U.A.C. tinha alguma boa"
+#define C_END2_TXT08	"razao para esconder este lugar."
 #define C_END2_TXT09	" "
-#define C_END2_TXT10	"You wonder what it"
-#define C_END2_TXT11	"could be..."
+#define C_END2_TXT10	"Voce se pergunta o que"
+#define C_END2_TXT11	"poderia ser..."
 
-#define C_END3_TXT01	"You smile."
+#define C_END3_TXT01	"Voce sorri."
 #define C_END3_TXT02	" "
-#define C_END3_TXT03	"What strange place have"
-#define C_END3_TXT04	"you stumbled upon?"
+#define C_END3_TXT03	"Que lugar estranho voce"
+#define C_END3_TXT04	"encontrou?"
 #define C_END3_TXT05	" "
-#define C_END3_TXT06	"The demons did not expect"
-#define C_END3_TXT07	"you to survive this far."
-#define C_END3_TXT08	"You feel their demonic"
-#define C_END3_TXT09	"presence waiting for you..."
+#define C_END3_TXT06	"Os demonios nao esperavam"
+#define C_END3_TXT07	"que voce sobrevivesse ate aqui."
+#define C_END3_TXT08	"Voce sente a presenca demoniaca"
+#define C_END3_TXT09	"esperando por voce..."
 #define C_END3_TXT10	" "
-#define C_END3_TXT11	"Let them taste their guts!"
+#define C_END3_TXT11	"Deixe-os sentir suas tripas!"
 
-#define C_END4_TXT01	"You wretch as a strange"
-#define C_END4_TXT02	"acrid odor assaults you."
+#define C_END4_TXT01	"Voce se contorce enquanto um cheiro"
+#define C_END4_TXT02	"acido e estranho lhe atinge."
 #define C_END4_TXT03	" "
-#define C_END4_TXT04	"Death and demon carcass!"
+#define C_END4_TXT04	"Mortes e carcacas de demonios!"
 #define C_END4_TXT05	" "
-#define C_END4_TXT06	"No nightmare could have"
-#define C_END4_TXT07	"prepared you for this."
+#define C_END4_TXT06	"Nenhum pesadelo poderia ter"
+#define C_END4_TXT07	"preparado voce para isso."
 #define C_END4_TXT08	" "
-#define C_END4_TXT09	"You realize that this"
-#define C_END4_TXT10	"place was not meant for"
-#define C_END4_TXT11	"living humans."
+#define C_END4_TXT09	"Voce percebe que este"
+#define C_END4_TXT10	"lugar nao era feito para"
+#define C_END4_TXT11	"humanos vivos."
 
-#define C_END5_TXT01	"Congratulations!"
-#define C_END5_TXT02	"You found..."
+#define C_END5_TXT01	"Parabens!"
+#define C_END5_TXT02	"Voce encontrou..."
 #define C_END5_TXT03	" "
-#define C_END5_TXT04	"HECTIC"
+#define C_END5_TXT04	"HECTICO"
 #define C_END5_TXT05	" "
-#define C_END5_TXT06	"Only the best will reap"
-#define C_END5_TXT07	"its rewards."
+#define C_END5_TXT06	"Apenas os melhores colherao"
+#define C_END5_TXT07	"suas recompensas."
 
-#define C_END6_TXT01	"Finally..."
-#define C_END6_TXT02	"The mother of all demons"
-#define C_END6_TXT03	"is dead!"
+#define C_END6_TXT01	"Finalmente..."
+#define C_END6_TXT02	"A mae de todos os demonios"
+#define C_END6_TXT03	"esta morta!"
 #define C_END6_TXT04	" "
-#define C_END6_TXT05	"The blood pours from"
-#define C_END6_TXT06	"your eyes as you stand"
-#define C_END6_TXT07	"in defiance."
+#define C_END6_TXT05	"O sangue escorre dos"
+#define C_END6_TXT06	"seus olhos enquanto voce se levanta"
+#define C_END6_TXT07	"em desafio."
 #define C_END6_TXT08	" "
-#define C_END6_TXT09	"As the only marine to"
-#define C_END6_TXT10	"endure the slaughter-"
-#define C_END6_TXT11	"you decide to remain"
-#define C_END6_TXT12	"in Hell and ensure no"
-#define C_END6_TXT13	"demon ever rises again."
+#define C_END6_TXT09	"Como o unico marine a"
+#define C_END6_TXT10	"suportar o massacre,"
+#define C_END6_TXT11	"voce decide ficar"
+#define C_END6_TXT12	"no Inferno e garantir que nenhum"
+#define C_END6_TXT13	"demonio ever surja novamente."
 #define C_END6_TXT14	" "
-#define C_END6_TXT15	"The End."
+#define C_END6_TXT15	"O Fim."
 
 char *introcluster[] =   // [Immorpher] new intro text adapted from Doom 64 Manual and Doom 64 Reloaded
 {
@@ -233,25 +232,25 @@ char *endcluster6[] =   // 8005A3B0
 // Character cast strings F_FINALE.C
 //
 #define CC_ZOMBIE	"Zombieman"
-#define CC_SHOTGUN	"Shotgun Guy"
-//#define CC_HEAVY	"Heavy Weapon Dude" // Enemy Removed
+#define CC_SHOTGUN	"Atirador"
+#define CC_HEAVY	"Dude da Arma Pesada" // Inimigo Removido
 #define CC_IMP		"Imp"
-#define CC_NIMP		"Nightmare Imp" // New Enemy on Doom64
-#define CC_DEMON	"Bull Demon"
-#define CC_SPECT	"Spectre"   // New Enemy on Doom64
-#define CC_LOST		"Lost Soul"
-#define CC_CACO		"Cacodemon"
-#define CC_HELL		"Hell Knight"
-#define CC_BARON	"Baron Of Hell"
+#define CC_NIMP		"Imp Pesadelo" // Novo Inimigo no Doom64
+#define CC_DEMON	"Demonio Touros"
+#define CC_SPECT	"Spectre" // Novo Inimigo no Doom64
+#define CC_LOST		"Alma Perdida"
+#define CC_CACO		"Cacodemonio"
+#define CC_HELL		"Cavaleiro Infernal"
+#define CC_BARON	"Barão do Inferno"
 #define CC_ARACH	"Arachnotron"
-#define CC_PAIN		"Pain Elemental"
-//#define CC_REVEN	"Revenant"  // Enemy Removed
+#define CC_PAIN		"Elemental da Dor"
+#define CC_REVEN	"Revenant" // Inimigo Removido
 #define CC_MANCU	"Mancubus"
-//#define CC_ARCH	"Arch-Vile" // Enemy Removed
-//#define CC_SPIDER	"The Spider Mastermind" // Enemy Removed
-#define CC_CYBER	"The Cyberdemon"
-#define CC_MOTHER	"Mother Demon"
-#define CC_HERO		"Our Hero"
+#define CC_ARCH		"Arqui-Vil" // Inimigo Removido
+#define CC_SPIDER	"O Aranha Mestre" // Inimigo Removido
+#define CC_CYBER	"O Cyberdemonio"
+#define CC_MOTHER	"Mãe Demonio"
+#define CC_HERO		"Nosso Heroi"
 
 //
 // Final DOOM 2 animation
@@ -437,7 +436,7 @@ void F_DrawerIntermission(void) // 80002F14
 	//gDPSetFillColor(GFX1++, GPACK_RGBA5551(0,0,0,0) << 16 | GPACK_RGBA5551(0,0,0,0)) ;
 	//gDPFillRectangle(GFX1++, 0, 0, SCREEN_WD-1, SCREEN_HT-1);
 
-	M_DrawBackground(63, 25, 128, "EVIL", 0.00015f, 0);
+	M_DrawBackground(63, 25, 128, "MAL", 0.00015f, 0);
 
 	ypos = textypos;
 	for(i = 0; i < textline; i++)
@@ -826,7 +825,7 @@ void F_Drawer(void) // 800039DC
 			break;
 
 		case F_STAGE_CAST:
-			M_DrawBackground(63, 25, fadeinout, "EVIL", 0.00015f, 0);
+			M_DrawBackground(63, 25, fadeinout, "MAL", 0.00015f, 0);
 
 			type = castorder[castnum].type;
 

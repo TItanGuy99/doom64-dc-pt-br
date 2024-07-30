@@ -384,7 +384,7 @@ void AM_Drawer (void) // 800009AC
 
 	if (enable_messages) {
 		if (p->messagetic <= 0) {
-			sprintf(map_name, "LEVEL %d: %s", gamemap, MapInfo[gamemap].name);
+			sprintf(map_name, "NIVEL %d: %s", gamemap, MapInfo[gamemap].name);
 			ST_Message(2+HUDmargin,HUDmargin, map_name, 196 | 0xffffff00);
 		} else {
 			ST_Message(2+HUDmargin,HUDmargin, p->message, 196 | p->messagecolor);
@@ -393,11 +393,11 @@ void AM_Drawer (void) // 800009AC
 
 	// [Immorpher] kill count
 	if(MapStats) {
-		sprintf(killcount, "KILLS: %d/%d", players[0].killcount, totalkills);
+		sprintf(killcount, "MORTES: %d/%d", players[0].killcount, totalkills);
 		ST_Message(2+HUDmargin, 212-HUDmargin, killcount, 196 | 0xffffff00);
-		sprintf(itemcount, "ITEMS: %d/%d", players[0].itemcount, totalitems);
+		sprintf(itemcount, "ITENS: %d/%d", players[0].itemcount, totalitems);
 		ST_Message(2+HUDmargin, 222-HUDmargin, itemcount, 196| 0xffffff00);
-		sprintf(secretcount, "SECRETS: %d/%d", players[0].secretcount, totalsecret);
+		sprintf(secretcount, "SEGREDOS: %d/%d", players[0].secretcount, totalsecret);
 		ST_Message(2+HUDmargin, 232-HUDmargin, secretcount, 196 | 0xffffff00);
 	}
 

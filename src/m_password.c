@@ -668,7 +668,7 @@ void M_PasswordDrawer(void) // 8000CAF0
     int     texid=0, cnt;
     int     xpos, ypos, pos1;
 
-    ST_DrawString(-1, 20, "Password", text_alpha | 0xc0000000);
+    ST_DrawString(-1, 20, "Senha", text_alpha | 0xc0000000);
 
     for(cnt = 0; cnt < 32; cnt++)
     {
@@ -749,9 +749,9 @@ void M_PasswordDrawer(void) // 8000CAF0
     }
     else
     {
-        ST_DrawString(-1, 160, "Invalid Password", text_alpha | 0xffffff00);
+        ST_DrawString(-1, 160, "Senha Invalida", text_alpha | 0xffffff00);
     }
 
-    ST_DrawString(-1,195, "press \x8d to exit", text_alpha | 0xffffff00);
-    ST_DrawString(-1,210, "press \x84 to change", text_alpha | 0xffffff00);
+    ST_DrawString(-1,195, "pressione \x8d para sair", text_alpha | 0xffffff00);
+    ST_DrawString(-1,210, "pressione \x84 para mudar", text_alpha | 0xffffff00);
 }

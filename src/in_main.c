@@ -9,39 +9,39 @@ extern int nextmap;
 
 #define T_NULL	    ""
 
-#define MI_TXT01	"Staging Area"
-#define MI_TXT02	"The Terraformer"
-#define MI_TXT03	"Main Engineering"
-#define MI_TXT04	"Holding Area"
-#define MI_TXT05	"Tech Center"
-#define MI_TXT06	"Alpha Quadrant"
-#define MI_TXT07	"Research Lab"
-#define MI_TXT08	"Final Outpost"
-#define MI_TXT09	"Even Simpler"
-#define MI_TXT10	"The Bleeding"
-#define MI_TXT11	"Terror Core"
-#define MI_TXT12	"Altar of Pain"
-#define MI_TXT13	"Dark Citadel"
-#define MI_TXT14	"Eye of the Storm"
-#define MI_TXT15	"Dark Entries"
-#define MI_TXT16	"Blood Keep"
-#define MI_TXT17	"Watch Your Step"
-#define MI_TXT18	"Spawned Fear"
-#define MI_TXT19	"The Spiral"
-#define MI_TXT20	"Breakdown"
-#define MI_TXT21	"Pitfalls"
-#define MI_TXT22	"Burnt Offerings"
-#define MI_TXT23	"Unholy Temple"
-#define MI_TXT24	"No Escape"
-#define MI_TXT25	"Cat And Mouse"
-#define MI_TXT26	"HardCore"
-#define MI_TXT27	"Playground"
-#define MI_TXT28	"The Absolution"
-#define MI_TXT29	"Outpost Omega"
-#define MI_TXT30	"The Lair"
-#define MI_TXT31	"In The Void"
-#define MI_TXT32	"Hectic"
-#define MI_TXT33	"TITLE"
+#define MI_TXT01    "Area Inicial"
+#define MI_TXT02    "Terraformador"
+#define MI_TXT03    "Engenharia"
+#define MI_TXT04    "Area de Retencao"
+#define MI_TXT05    "Centro Tech"
+#define MI_TXT06    "Quadrante Alpha"
+#define MI_TXT07    "Lab Pesquisa"
+#define MI_TXT08    "Ultimo Posto"
+#define MI_TXT09    "Ainda Mais Simples"
+#define MI_TXT10    "Sangramento"
+#define MI_TXT11    "Nucleo do Terror"
+#define MI_TXT12    "Altar da Dor"
+#define MI_TXT13    "Cidadela Escura"
+#define MI_TXT14    "Olho da Tempestade"
+#define MI_TXT15    "Entradas Escuras"
+#define MI_TXT16    "Fortaleza de Sangue"
+#define MI_TXT17    "Cuidado Onde Pisa"
+#define MI_TXT18    "Medo Criado"
+#define MI_TXT19    "A Espiral"
+#define MI_TXT20    "Colapso"
+#define MI_TXT21    "Armadilhas"
+#define MI_TXT22    "Ofertas Queimadas"
+#define MI_TXT23    "Templo Profano"
+#define MI_TXT24    "Sem Fuga"
+#define MI_TXT25    "Gato e Rato"
+#define MI_TXT26    "Nucleo Duro"
+#define MI_TXT27    "Playground"
+#define MI_TXT28    "A Absolucao"
+#define MI_TXT29    "Posto Omega"
+#define MI_TXT30    "O Covil"
+#define MI_TXT31    "No Vazio"
+#define MI_TXT32    "Agitado"
+#define MI_TXT33    "TITULO"
 
 mapinfo_t MapInfo[] = //8005A478
 {
@@ -283,45 +283,45 @@ void IN_Drawer(void) // 80005164
 pvr_set_bg_color(0,0,0);
 pvr_fog_table_color(0.0f,0.0f,0.0f,0.0f);
 
-	M_DrawBackground(63, 25, 128, "EVIL", 0.00015f, 0);
+	M_DrawBackground(63, 25, 128, "MAL", 0.00015f, 0);
 
 	ST_DrawString(-1, 20, MapInfo[gamemap].name, PACKRGBA(255, 255, 255, text_alpha));
 
-	ST_DrawString(-1, 36, "Finished", PACKRGBA(255, 255, 255, text_alpha));
+	ST_DrawString(-1, 36, "Finalizado", PACKRGBA(255, 255, 255, text_alpha));
 
     if ((nextstage > 0) && (killvalue > -1))
     {
-        ST_DrawString(57, 60, "Kills", PACKRGBA(192, 0, 0, text_alpha));
+        ST_DrawString(57, 60, "Mortes", PACKRGBA(192, 0, 0, text_alpha));
         ST_DrawString(248, 60, "%", PACKRGBA(192, 0, 0, text_alpha));
         ST_DrawNumber(210, 60, killvalue, 1, PACKRGBA(192, 0, 0, text_alpha));
     }
 
     if ((nextstage > 1) && (itemvalue > -1))
     {
-        ST_DrawString(57, 78, "Items", PACKRGBA(192, 0, 0, text_alpha));
+        ST_DrawString(57, 78, "Itens", PACKRGBA(192, 0, 0, text_alpha));
         ST_DrawString(248, 78, "%", PACKRGBA(192, 0, 0, text_alpha));
         ST_DrawNumber(210, 78, itemvalue, 1, PACKRGBA(192, 0, 0, text_alpha));
     }
 
     if ((nextstage > 2) && (secretvalue > -1))
     {
-        ST_DrawString(57, 99, "Secrets", PACKRGBA(192, 0, 0, text_alpha));
+        ST_DrawString(57, 99, "Segredos", PACKRGBA(192, 0, 0, text_alpha));
         ST_DrawString(248, 99, "%", PACKRGBA(192, 0, 0, text_alpha));
         ST_DrawNumber(210, 99, secretvalue, 1, PACKRGBA(192, 0, 0, text_alpha));
     }
 
     if ((nextstage > 3))
     {
-        ST_DrawString(57, 120, "Time", PACKRGBA(192, 0, 0, text_alpha));
+        ST_DrawString(57, 120, "Tempo", PACKRGBA(192, 0, 0, text_alpha));
         ST_DrawString(210, 120, timetext, PACKRGBA(192, 0, 0, text_alpha));
     }
 
 	if ((nextstage > 4) && (nextmap < LASTLEVEL))
 	{
-        ST_DrawString(-1, 145, "Entering", PACKRGBA(255, 255, 255, text_alpha));
+        ST_DrawString(-1, 145, "Entrando", PACKRGBA(255, 255, 255, text_alpha));
         ST_DrawString(-1, 161, MapInfo[nextmap].name, PACKRGBA(255, 255, 255, text_alpha));
 
-        ST_DrawString(-1, 187, "Password", PACKRGBA(255, 255, 255, text_alpha));
+        ST_DrawString(-1, 187, "Senha", PACKRGBA(255, 255, 255, text_alpha));
 
         pbuff = password;
 		for (i = 0; i < 16; i++)
