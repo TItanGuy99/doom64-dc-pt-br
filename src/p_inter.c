@@ -379,7 +379,7 @@ void P_TouchSpecialThing (mobj_t *special, mobj_t *toucher) // 80014810
 	case MT_AMMO_SHELLBOX:
 		if (!P_GiveAmmo (player, am_shell,5))
 			return;
-		message = "Pegou uma caixa de balas de espingarda.";
+		message = "Pegou caixa de balas de espingarda.";
 		break;
 	case MT_AMMO_BACKPACK:
 		if (!player->backpack)

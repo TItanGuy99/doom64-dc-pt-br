@@ -1015,7 +1015,7 @@ boolean P_UseSpecialLine (line_t *line, mobj_t *thing) // 800204BC
 		{
 			if(!player->cards[it_bluecard] && !player->cards[it_blueskull])
 			{
-				player->message = "You need a blue key.";
+				player->message = "Voce precisa de uma chave azul.";
 				player->messagetic = MSGTICS;
 				player->messagecolor = 0x0080ff00;
 				S_StartSound(thing, sfx_oof);
