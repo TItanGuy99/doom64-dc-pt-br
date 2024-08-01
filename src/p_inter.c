@@ -412,13 +412,13 @@ void P_TouchSpecialThing (mobj_t *special, mobj_t *toucher) // 80014810
 	case MT_WEAP_CHAINSAW:
 		if (!P_GiveWeapon (player, wp_chainsaw, false) )
 			return;
-		message = "Uma serra! Encontre alguma carne!";
+		message = "Uma motosserra! Encontre alguma carne!";
 		sound = sfx_sgcock;
 		break;
 	case MT_WEAP_LAUNCHER:
 		if (!P_GiveWeapon (player, wp_missile, false) )
 			return;
-		 message = "Voce pegou o lancador de foguetes!";
+		 message = "Voce pegou o lanca foguetes!";
 		sound = sfx_sgcock;
 		break;
 	case MT_WEAP_PLASMA:

@@ -7,15 +7,15 @@
 #define T_NULL	        ""
 
 // [Immorpher] New introduction text adapted from Doom 64 reloaded!
-#define C_INTRO_TXT01	"Sobrevivendo ao veneno do mal"
-#define C_INTRO_TXT02	"levou a sanidade ao limite. Os"
+#define C_INTRO_TXT01	"Sobreviver ao veneno tem"
+#define C_INTRO_TXT02	"levado a sanidade ao limite. Os"
 #define C_INTRO_TXT03	"tratamentos dos medicos sao de pouco"
 #define C_INTRO_TXT04	"ajuda. Pesadelos de tantos demonios"
 #define C_INTRO_TXT05	"atravessando nao vao parar."
 #define C_INTRO_TXT06	" "
 #define C_INTRO_TXT07	"O posto avancado em Phobos foi deixado morto"
 #define C_INTRO_TXT08	"em uma neblina nuclear. No entanto, o inferno"
-#define C_INTRO_TXT09	"alcancou de volta. Algo distorceu a realidade e"
+#define C_INTRO_TXT09	"retornou. Algo distorceu a realidade e"
 #define C_INTRO_TXT10	"ressuscitou carnificina em decomposicao"
 #define C_INTRO_TXT11	"de volta a tecido horrivel."
 #define C_INTRO_TXT12	" "
@@ -37,10 +37,10 @@
 #define C_END1_TXT07	"de voce com seu convite."
 #define C_END1_TXT08	"Isso nao importa..."
 #define C_END1_TXT09	"Os demonios nascem como ratos"
-#define C_END1_TXT10	"e voce tem o veneno grade AAA"
-#define C_END1_TXT11	"U.A.C. que eles desejam."
+#define C_END1_TXT10	"e voce tem o veneno classe AAA"
+#define C_END1_TXT11	"da U.A.C. que eles desejam."
 #define C_END1_TXT12	"Seu grito sedento por sangue"
-#define C_END1_TXT13	"estilhaca a neblina de teletransporte."
+#define C_END1_TXT13	"dissipa a neblina do teletransporte."
 #define C_END1_TXT14	"Mais uma vez voce se encontra"
 #define C_END1_TXT15	"no meio de..."
 
@@ -50,7 +50,7 @@
 #define C_END2_TXT04	"Voce sabia que a instalacao"
 #define C_END2_TXT05	"tinha um nivel classificado."
 #define C_END2_TXT06	" "
-#define C_END2_TXT07	"O U.A.C. tinha alguma boa"
+#define C_END2_TXT07	"A U.A.C. tinha alguma boa"
 #define C_END2_TXT08	"razao para esconder este lugar."
 #define C_END2_TXT09	" "
 #define C_END2_TXT10	"Voce se pergunta o que"
@@ -66,9 +66,9 @@
 #define C_END3_TXT08	"Voce sente a presenca demoniaca"
 #define C_END3_TXT09	"esperando por voce..."
 #define C_END3_TXT10	" "
-#define C_END3_TXT11	"Deixe-os sentir suas tripas!"
+#define C_END3_TXT11	"Deixe-os provar suas tripas!"
 
-#define C_END4_TXT01	"Voce se contorce enquanto um cheiro"
+#define C_END4_TXT01	"Voce se contorce enquanto um odor"
 #define C_END4_TXT02	"acido e estranho lhe atinge."
 #define C_END4_TXT03	" "
 #define C_END4_TXT04	"Mortes e carcacas de demonios!"
@@ -77,13 +77,13 @@
 #define C_END4_TXT07	"preparado voce para isso."
 #define C_END4_TXT08	" "
 #define C_END4_TXT09	"Voce percebe que este"
-#define C_END4_TXT10	"lugar nao era feito para"
+#define C_END4_TXT10	"lugar nao foi feito para"
 #define C_END4_TXT11	"humanos vivos."
 
 #define C_END5_TXT01	"Parabens!"
 #define C_END5_TXT02	"Voce encontrou..."
 #define C_END5_TXT03	" "
-#define C_END5_TXT04	"HECTICO"
+#define C_END5_TXT04	"CAOTICO"
 #define C_END5_TXT05	" "
 #define C_END5_TXT06	"Apenas os melhores colherao"
 #define C_END5_TXT07	"suas recompensas."
@@ -93,16 +93,16 @@
 #define C_END6_TXT03	"esta morta!"
 #define C_END6_TXT04	" "
 #define C_END6_TXT05	"O sangue escorre dos"
-#define C_END6_TXT06	"seus olhos enquanto voce se levanta"
+#define C_END6_TXT06	"seus olhos enquanto voce se mantem"
 #define C_END6_TXT07	"em desafio."
 #define C_END6_TXT08	" "
-#define C_END6_TXT09	"Como o unico marine a"
-#define C_END6_TXT10	"suportar o massacre,"
+#define C_END6_TXT09	"Como o unico fuzileiro a"
+#define C_END6_TXT10	"sobreviver ao massacre,"
 #define C_END6_TXT11	"voce decide ficar"
 #define C_END6_TXT12	"no Inferno e garantir que nenhum"
-#define C_END6_TXT13	"demonio ever surja novamente."
+#define C_END6_TXT13	"demonio ressurja novamente."
 #define C_END6_TXT14	" "
-#define C_END6_TXT15	"O Fim."
+#define C_END6_TXT15	"Fim."
 
 char *introcluster[] =   // [Immorpher] new intro text adapted from Doom 64 Manual and Doom 64 Reloaded
 {
@@ -233,24 +233,24 @@ char *endcluster6[] =   // 8005A3B0
 // Character cast strings F_FINALE.C
 //
 #define CC_ZOMBIE	"Zombieman"
-#define CC_SHOTGUN	"Atirador"
-#define CC_HEAVY	"Dude da Arma Pesada" // Inimigo Removido
-#define CC_IMP		"Imp"
-#define CC_NIMP		"Imp Pesadelo" // Novo Inimigo no Doom64
+#define CC_SHOTGUN	"Cara da Espingarda"
+#define CC_HEAVY	"Cara da Arma Pesada" // Inimigo Removido
+#define CC_IMP		"Diabrete"
+#define CC_NIMP		"Diabrete Pesadelo" // Novo Inimigo no Doom64
 #define CC_DEMON	"Demonio Touros"
-#define CC_SPECT	"Spectre" // Novo Inimigo no Doom64
+#define CC_SPECT	"Espectro" // Novo Inimigo no Doom64
 #define CC_LOST		"Alma Perdida"
 #define CC_CACO		"Cacodemonio"
 #define CC_HELL		"Cavaleiro Infernal"
-#define CC_BARON	"Barão do Inferno"
+#define CC_BARON	"Barao do Inferno"
 #define CC_ARACH	"Arachnotron"
 #define CC_PAIN		"Elemental da Dor"
 #define CC_REVEN	"Revenant" // Inimigo Removido
 #define CC_MANCU	"Mancubus"
 #define CC_ARCH		"Arqui-Vil" // Inimigo Removido
-#define CC_SPIDER	"O Aranha Mestre" // Inimigo Removido
+#define CC_SPIDER	"O Mestre Aranha" // Inimigo Removido
 #define CC_CYBER	"O Cyberdemonio"
-#define CC_MOTHER	"Mãe Demonio"
+#define CC_MOTHER	"Demonio Mae"
 #define CC_HERO		"Nosso Heroi"
 
 //

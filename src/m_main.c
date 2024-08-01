@@ -55,21 +55,21 @@ char *ControlText[] =   //8007517C
 #define M_TXT23 "IR PARA NIVEL"
 #define M_TXT24 "INVULNERAVEL"
 #define M_TXT25 "AUMENTAR VIDA"
-#define M_TXT26 "CHAVES DE SEGURANCA"
+#define M_TXT26 "CHAVES"
 #define M_TXT27 "ARMAS"
 #define M_TXT28 "Sair"
 #define M_TXT29 "DEBBUGAR"
 #define M_TXT30 "TESTE DE TEXTURA"
-#define M_TXT31 "BLOQUEIO DE PAREDES"
+#define M_TXT31 "BLOQU. PAREDES"
 #define M_TXT32 "Centralizar Tela"
 #define M_TXT33 "Mensagens:"
 #define M_TXT34 "Opacidade"
-#define M_TXT35 "BLOQUEAR MONSTROS"
+#define M_TXT35 "BLOQ. MONSTROS"
 #define M_TXT36 "CAPTURA DE TELA"
 #define M_TXT37 "MAPEAR TUDO"
 #define M_TXT38 "MACRO PEEK"
 #define M_TXT39 "TESTE DE MUSICA"
-#define M_TXT40 "TRANSPORTAR PARA DIVERSAO"
+#define M_TXT40 "IR ATE DIVERSAO"
 #define M_TXT41 "Movimento"
 #define M_TXT42 "Original" // Original padrao para Doom 64
 #define M_TXT43 "Sensibilidade"
@@ -84,10 +84,10 @@ char *ControlText[] =   //8007517C
 #define M_TXT50 "Filtragem:"   // [GEC] Nova opcão de filtro de vídeo
 #define M_TXT51 "Tela"   // [Immorpher] Novo item de menu
 #define M_TXT52 "Balanco de Movimento"   // [Immorpher] Novo item de menu
-#define M_TXT53 "Filtro Dither:" // [Immorpher] Filtro Dither
-#define M_TXT54 "Anti-Aliasing:" // [Immorpher] Nova opcão de anti-aliasing
+#define M_TXT53 "Filtro de Pontilhamento:" // [Immorpher] Filtro Pontilhamento
+#define M_TXT54 "Antiserrilhado:" // [Immorpher] Nova opcão de anti-aliasing
 #define M_TXT55 "Entrelacamento:" // [Immorpher] Nova opcão de entrelacamento
-#define M_TXT56 "Dither de Cor:" // [Immorpher] Novas opcões de dither de cor
+#define M_TXT56 "Pontilhamento de Cor:" // [Immorpher] Novas opcões de pontilhamento de cor
 #define M_TXT57 "Brilho do Flash" // [Immorpher] Nova opcão de brilho do flash
 #define M_TXT58 "Implacavel" // [Immorpher] Configuracões padrão implacáveis
 #define M_TXT59 "Immorpher" // [Immorpher] Configuracões padrão Immorpher
@@ -96,10 +96,10 @@ char *ControlText[] =   //8007517C
 #define M_TXT62 "Estatisticas:" // [Immorpher] Exibir estatísticas do automapa
 #define M_TXT63 "HUD de Status" // [Immorpher] Nova opcão de menu para elementos do HUD!
 #define M_TXT64 "Margem" // [Immorpher] Ajustar a margem para o HUD
-#define M_TXT65 "TRANSPORTAR PARA MAE" // [Immorpher] Novos recursos do menu de transportes
-#define M_TXT66 "TRANSPORTAR PARA SECRETO" // [Immorpher] Novos recursos do menu de transportes
+#define M_TXT65 "IR PARA MAE" // [Immorpher] Novos recursos do menu de transportes
+#define M_TXT66 "IR PARA SECRETO" // [Immorpher] Novos recursos do menu de transportes
 #define M_TXT67 "Colorido:" // [Immorpher] HUD colorido
-#define M_TXT68 "GAMMA CORRETO"   // [Immorpher] NOVO CÓDIGO DE TRAPAcA
+#define M_TXT68 "CORRECAO DE GAMA"   // [Immorpher] NOVO CÓDIGO DE TRAPAcA
 
 // Merciless Edition Credits
 #define M_TXT69 "CREDITOS DA EDICAO IMPLACAVEL"   // [Immorpher] Credits
@@ -3416,7 +3416,7 @@ int M_CenterDisplayTicker(void) // 8000B4C4
 
 void M_CenterDisplayDrawer(void) // 8000B604
 {
-    ST_DrawString(-1, 20, "Centralizar Display", text_alpha | 0xc0000000);
+    ST_DrawString(-1, 20, "Centralizar Tela", text_alpha | 0xc0000000);
     ST_DrawString(-1, 114, "use o controle para ajustar", text_alpha | 0xffffff00);
     ST_DrawString(-1, 210, "pressione \x8d para sair", text_alpha | 0xffffff00);
 }

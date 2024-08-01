@@ -40,7 +40,7 @@ extern int nextmap;
 #define MI_TXT29    "Posto Omega"
 #define MI_TXT30    "O Covil"
 #define MI_TXT31    "No Vazio"
-#define MI_TXT32    "Agitado"
+#define MI_TXT32    "Caotico"
 #define MI_TXT33    "TITULO"
 
 mapinfo_t MapInfo[] = //8005A478
@@ -287,7 +287,7 @@ pvr_fog_table_color(0.0f,0.0f,0.0f,0.0f);
 
 	ST_DrawString(-1, 20, MapInfo[gamemap].name, PACKRGBA(255, 255, 255, text_alpha));
 
-	ST_DrawString(-1, 36, "Fim", PACKRGBA(255, 255, 255, text_alpha));
+	ST_DrawString(-1, 36, "Finalizado", PACKRGBA(255, 255, 255, text_alpha));
 
     if ((nextstage > 0) && (killvalue > -1))
     {
