@@ -1227,7 +1227,7 @@ boolean P_UseSpecialLine(line_t *line, mobj_t *thing)
 		if (line->special & MLU_BLUE) {
 			if (!player->cards[it_bluecard] &&
 			    !player->cards[it_blueskull]) {
-				player->message = "Voce precisa de uma chave azul.";
+				player->message = "You need a blue key.";
 				player->messagetic = MSGTICS;
 				player->messagecolor = 0x0080ff00;
 				S_StartSound(thing, sfx_oof);
@@ -1243,7 +1243,7 @@ boolean P_UseSpecialLine(line_t *line, mobj_t *thing)
 		if (line->special & MLU_YELLOW) {
 			if (!player->cards[it_yellowcard] &&
 			    !player->cards[it_yellowskull]) {
-				player->message = "Voce precisa de uma chave amarela.";
+				player->message = "You need a yellow key.";
 				player->messagetic = MSGTICS;
 				player->messagecolor = 0xC4C40000;
 				S_StartSound(thing, sfx_oof);
@@ -1260,7 +1260,7 @@ boolean P_UseSpecialLine(line_t *line, mobj_t *thing)
 		if (line->special & MLU_RED) {
 			if (!player->cards[it_redcard] &&
 			    !player->cards[it_redskull]) {
-				player->message = "Voce precisa de uma chave vermelha.";
+				player->message = "You need a red key.";
 				player->messagetic = MSGTICS;
 				player->messagecolor = 0xff404000;
 				S_StartSound(
@@ -1286,7 +1286,7 @@ boolean P_UseSpecialLine(line_t *line, mobj_t *thing)
 		    (((player->artifacts & 1) << ((actionType + 6) & 0x1f)) ==
 		     0)) {
 			player->message =
-				"Voce nao tem a habilidade para ativar isso.";
+				"You lack the ability to activate it.";
 			player->messagetic = MSGTICS;
 			player->messagecolor = 0xC4C4C400;
 			S_StartSound(thing, sfx_oof);

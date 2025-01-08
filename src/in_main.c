@@ -9,55 +9,55 @@ extern int nextmap;
 
 #define T_NULL ""
 
-#define MI_TXT01 "Entrada"
-#define MI_TXT02 "Trituradora"
-#define MI_TXT03 "Engenharia Principal"
-#define MI_TXT04 "Area de Espera"
-#define MI_TXT05 "Centro Tecnologico"
-#define MI_TXT06 "Quadrante Alpha"
-#define MI_TXT07 "Laboratorio de Pesquisa"
-#define MI_TXT08 "Posto de Vigia Final"
-#define MI_TXT09 "Mais Simples Ainda"
-#define MI_TXT10 "Antro"
-#define MI_TXT11 "Nucleo do Terror"
-#define MI_TXT12 "Altar da Dor"
-#define MI_TXT13 "Cidadela Negra"
-#define MI_TXT14 "Olho da Tempestade"
-#define MI_TXT15 "Entranhas Negras"
-#define MI_TXT16 "Fortaleza Sangrenta"
-#define MI_TXT17 "Cuidado Onde Pisa"
-#define MI_TXT18 "Medo Desovado"
-#define MI_TXT19 "Espiral"
-#define MI_TXT20 "Demolicao"
-#define MI_TXT21 "Penhascos"
-#define MI_TXT22 "Oferendas Ardentes"
-#define MI_TXT23 "Templo Profano"
-#define MI_TXT24 "Sem Escapatoria"
-#define MI_TXT25 "Gato e Rato"
-#define MI_TXT26 "Sem Brincadeira"
-#define MI_TXT27 "Parquinho"
-#define MI_TXT28 "Absolvicao"
-#define MI_TXT29 "Posto de Vigia Omega"
-#define MI_TXT30 "Covil"
-#define MI_TXT31 "No Vacuo"
-#define MI_TXT32 "Caotico"
-#define MI_TXT33 "TITULO"
-#define MI_TXT34 "Planta de Operacao" // Lost levels
-#define MI_TXT35 "Sacrificio Maligno"
-#define MI_TXT36 "Terreno Gelado"
-#define MI_TXT37 "Tanques Destruidos"
-#define MI_TXT38 "Tua Gloria"
-#define MI_TXT39 "Julgamento Final"
-#define MI_TXT40 "Panico"
+#define MI_TXT01 "Staging Area"
+#define MI_TXT02 "The Terraformer"
+#define MI_TXT03 "Main Engineering"
+#define MI_TXT04 "Holding Area"
+#define MI_TXT05 "Tech Center"
+#define MI_TXT06 "Alpha Quadrant"
+#define MI_TXT07 "Research Lab"
+#define MI_TXT08 "Final Outpost"
+#define MI_TXT09 "Even Simpler"
+#define MI_TXT10 "The Bleeding"
+#define MI_TXT11 "Terror Core"
+#define MI_TXT12 "Altar of Pain"
+#define MI_TXT13 "Dark Citadel"
+#define MI_TXT14 "Eye of the Storm"
+#define MI_TXT15 "Dark Entries"
+#define MI_TXT16 "Blood Keep"
+#define MI_TXT17 "Watch Your Step"
+#define MI_TXT18 "Spawned Fear"
+#define MI_TXT19 "The Spiral"
+#define MI_TXT20 "Breakdown"
+#define MI_TXT21 "Pitfalls"
+#define MI_TXT22 "Burnt Offerings"
+#define MI_TXT23 "Unholy Temple"
+#define MI_TXT24 "No Escape"
+#define MI_TXT25 "Cat And Mouse"
+#define MI_TXT26 "HardCore"
+#define MI_TXT27 "Playground"
+#define MI_TXT28 "The Absolution"
+#define MI_TXT29 "Outpost Omega"
+#define MI_TXT30 "The Lair"
+#define MI_TXT31 "In The Void"
+#define MI_TXT32 "Hectic"
+#define MI_TXT33 "TITLE"
+#define MI_TXT34 "Plant Ops" // Lost levels
+#define MI_TXT35 "Evil Sacrifice"
+#define MI_TXT36 "Cold Grounds"
+#define MI_TXT37 "Wretched Vats"
+#define MI_TXT38 "Thy Glory"
+#define MI_TXT39 "Final Judgement"
+#define MI_TXT40 "Panic"
 #define MI_TXT41 "Hangar"
-#define MI_TXT42 "Usina Nuclear"
-#define MI_TXT43 "Refinaria Toxica"
-#define MI_TXT44 "Controle de Comando"
-#define MI_TXT45 "Laboratorio de Phobos"
-#define MI_TXT46 "Processamento Central"
-#define MI_TXT47 "Estacao de Computadores"
-#define MI_TXT48 "Anomalia de Phobos"
-#define MI_TXT49 "Base Militar"
+#define MI_TXT42 "Nuclear Plant"
+#define MI_TXT43 "Toxin Refinery"
+#define MI_TXT44 "Command Control"
+#define MI_TXT45 "Phobos Lab"
+#define MI_TXT46 "Central Processing"
+#define MI_TXT47 "Computer Station"
+#define MI_TXT48 "Phobos Anomaly"
+#define MI_TXT49 "Military Base"
 
 mapinfo_t MapInfo[] = //8005A478
 	{ { T_NULL, 0 },     { MI_TXT01, 96 },	{ MI_TXT02, 97 },
@@ -294,24 +294,24 @@ void IN_Drawer(void) // 80005164
 	ST_DrawString(-1, 20, MapInfo[gamemap].name,
 		      PACKRGBA(255, 255, 255, text_alpha),0);
 
-	ST_DrawString(-1, 36, "Finalizado", PACKRGBA(255, 255, 255, text_alpha),0);
+	ST_DrawString(-1, 36, "Finished", PACKRGBA(255, 255, 255, text_alpha),0);
 
 	if ((nextstage > 0) && (f_killvalue > -1)) {
-		ST_DrawString(57, 60, "Mortes", PACKRGBA(192, 0, 0, text_alpha),0);
+		ST_DrawString(57, 60, "Kills", PACKRGBA(192, 0, 0, text_alpha),0);
 		ST_DrawString(248, 60, "%", PACKRGBA(192, 0, 0, text_alpha),0);
 		ST_DrawNumber(210, 60, (int)f_killvalue, 1,
 			      PACKRGBA(192, 0, 0, text_alpha),0);
 	}
 
 	if ((nextstage > 1) && (f_itemvalue > -1)) {
-		ST_DrawString(57, 78, "Itens", PACKRGBA(192, 0, 0, text_alpha),0);
+		ST_DrawString(57, 78, "Items", PACKRGBA(192, 0, 0, text_alpha),0);
 		ST_DrawString(248, 78, "%", PACKRGBA(192, 0, 0, text_alpha),0);
 		ST_DrawNumber(210, 78, (int)f_itemvalue, 1,
 			      PACKRGBA(192, 0, 0, text_alpha),0);
 	}
 
 	if ((nextstage > 2) && (f_secretvalue > -1)) {
-		ST_DrawString(57, 99, "Segredos",
+		ST_DrawString(57, 99, "Secrets",
 			      PACKRGBA(192, 0, 0, text_alpha),0);
 		ST_DrawString(248, 99, "%", PACKRGBA(192, 0, 0, text_alpha),0);
 		ST_DrawNumber(210, 99, (int)f_secretvalue, 1,
@@ -319,7 +319,7 @@ void IN_Drawer(void) // 80005164
 	}
 
 	if ((nextstage > 3)) {
-		ST_DrawString(57, 120, "Tempo", PACKRGBA(192, 0, 0, text_alpha),0);
+		ST_DrawString(57, 120, "Time", PACKRGBA(192, 0, 0, text_alpha),0);
 		ST_DrawString(210, 120, timetext,
 			      PACKRGBA(192, 0, 0, text_alpha),0);
 	}
@@ -337,12 +337,12 @@ void IN_Drawer(void) // 80005164
 	if ((nextstage > 4) && FUNLEVEL(nextmap)) {
 
 	} else if ((nextstage > 4) && (nextmap < last_level)) {
-		ST_DrawString(-1, 145, "Entrando em",
+		ST_DrawString(-1, 145, "Entering",
 			      PACKRGBA(255, 255, 255, text_alpha),0);
 		ST_DrawString(-1, 161, MapInfo[nextmap].name,
 			      PACKRGBA(255, 255, 255, text_alpha),0);
 
-		ST_DrawString(-1, 187, "Senha",
+		ST_DrawString(-1, 187, "Password",
 			      PACKRGBA(255, 255, 255, text_alpha),0);
 
 		pbuff = password;

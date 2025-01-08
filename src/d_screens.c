@@ -68,14 +68,14 @@ void D_DrawWarning(void)
 	I_ClearFrame();
 
 	if (MenuAnimationTic & 1)
-		ST_DrawString(-1, 30, "AVISO!", 0xc00000ff,1);
+		ST_DrawString(-1, 30, "WARNING!", 0xc00000ff,1);
 
-	ST_DrawString(-1, 60, "controle dreamcast", 0xffffffff,1);
-	ST_DrawString(-1, 80, "nao esta conectado.", 0xffffffff,1);
-	ST_DrawString(-1, 120, "desligue seu", 0xffffffff,1);
-	ST_DrawString(-1, 140, "sistema dreamcast.", 0xffffffff,1);
-	ST_DrawString(-1, 180, "conecte o controle", 0xffffffff,1);
-	ST_DrawString(-1, 200, "dreamcast e ligue-o.", 0xffffffff,1);
+	ST_DrawString(-1, 60, "dreamcast controller", 0xffffffff,1);
+	ST_DrawString(-1, 80, "is not connected.", 0xffffffff,1);
+	ST_DrawString(-1, 120, "please turn off your", 0xffffffff,1);
+	ST_DrawString(-1, 140, "dreamcast system.", 0xffffffff,1);
+	ST_DrawString(-1, 180, "plug in your dreamcast", 0xffffffff,1);
+	ST_DrawString(-1, 200, "controller and turn it on.", 0xffffffff,1);
 
 	I_DrawFrame();
 }
@@ -99,7 +99,7 @@ void D_DrawLegal(void)
 	M_DrawBackground(27, 74, text_alpha, "USLEGAL", 0.00015f, 0);
 
 	if (FilesUsed > -1) {
-		ST_DrawString(-1, 200, "segure \x8d para gerenciar o vmu",
+		ST_DrawString(-1, 200, "hold \x8d to manage vmu",
 			      text_alpha | 0xffffff00,1);
 	}
 
@@ -118,12 +118,12 @@ void D_DrawNoPak(void)
 {
 	I_ClearFrame();
 
-	ST_DrawString(-1, 40, "sem vmu.", 0xffffffff,1);
-	ST_DrawString(-1, 60, "seu jogo nao pode", 0xffffffff,1);
-	ST_DrawString(-1, 80, "ser salvo.", 0xffffffff,1);
-	ST_DrawString(-1, 120, "desligue seu", 0xffffffff,1);
-	ST_DrawString(-1, 140, "sistema dreamcast", 0xffffffff,1);
-	ST_DrawString(-1, 160, "antes de inserir um", 0xffffffff,1);
+	ST_DrawString(-1, 40, "no vmu.", 0xffffffff,1);
+	ST_DrawString(-1, 60, "your game cannot", 0xffffffff,1);
+	ST_DrawString(-1, 80, "be saved.", 0xffffffff,1);
+	ST_DrawString(-1, 120, "please turn off your", 0xffffffff,1);
+	ST_DrawString(-1, 140, "dreamcast system", 0xffffffff,1);
+	ST_DrawString(-1, 160, "before inserting a", 0xffffffff,1);
 	ST_DrawString(-1, 180, "vmu.", 0xffffffff,1);
 
 	I_DrawFrame();

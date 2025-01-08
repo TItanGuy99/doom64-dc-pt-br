@@ -389,7 +389,7 @@ void AM_Drawer(void)
 
 	if (menu_settings.enable_messages) {
 		if (p->messagetic <= 0) {
-			sprintf(map_name, "NIVEL %d: %s", gamemap,
+			sprintf(map_name, "LEVEL %d: %s", gamemap,
 				MapInfo[gamemap].name);
 			ST_Message(2 + menu_settings.HUDmargin, menu_settings.HUDmargin, map_name,
 				   196 | 0xffffff00,0);
@@ -401,15 +401,15 @@ void AM_Drawer(void)
 
 	// [Immorpher] kill count
 	if (menu_settings.MapStats) {
-		sprintf(killcount, "MORTES: %d/%d", players[0].killcount,
+		sprintf(killcount, "KILLS: %d/%d", players[0].killcount,
 			totalkills);
 		ST_Message(2 + menu_settings.HUDmargin, 212 - menu_settings.HUDmargin, killcount,
 			   196 | 0xffffff00,0);
-		sprintf(itemcount, "ITENS: %d/%d", players[0].itemcount,
+		sprintf(itemcount, "ITEMS: %d/%d", players[0].itemcount,
 			totalitems);
 		ST_Message(2 + menu_settings.HUDmargin, 222 - menu_settings.HUDmargin, itemcount,
 			   196 | 0xffffff00,0);
-		sprintf(secretcount, "SEGREDOS: %d/%d", players[0].secretcount,
+		sprintf(secretcount, "SECRETS: %d/%d", players[0].secretcount,
 			totalsecret);
 		ST_Message(2 + menu_settings.HUDmargin, 232 - menu_settings.HUDmargin, secretcount,
 			   196 | 0xffffff00,0);

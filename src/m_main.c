@@ -9,131 +9,131 @@ extern int kneedeep_only;
 //intermission
 int DrawerStatus;
 
-#define CT_TXT00 "padrao: %d"
-#define CT_TXT01 "direita"
-#define CT_TXT02 "esquerda"
-#define CT_TXT03 "frente"
-#define CT_TXT04 "tras"
-#define CT_TXT05 "atacar"
-#define CT_TXT06 "usar"
-#define CT_TXT07 "mapa"
-#define CT_TXT08 "correr"
-#define CT_TXT09 "movimento lateral"
-#define CT_TXT10 "lateral esquerda"
-#define CT_TXT11 "lateral direita"
-#define CT_TXT12 "arma anterior"
-#define CT_TXT13 "proxima arma"
+#define CT_TXT00 "default: %d"
+#define CT_TXT01 "right"
+#define CT_TXT02 "left"
+#define CT_TXT03 "forward"
+#define CT_TXT04 "backward"
+#define CT_TXT05 "attack"
+#define CT_TXT06 "use"
+#define CT_TXT07 "map"
+#define CT_TXT08 "speed"
+#define CT_TXT09 "strafe on"
+#define CT_TXT10 "strafe left"
+#define CT_TXT11 "strafe right"
+#define CT_TXT12 "weapon backward"
+#define CT_TXT13 "weapon forward"
 
 char *ControlText[] = //8007517C
 	{ CT_TXT00, CT_TXT01, CT_TXT02, CT_TXT03, CT_TXT04, CT_TXT05, CT_TXT06,
 	  CT_TXT07, CT_TXT08, CT_TXT09, CT_TXT10, CT_TXT11, CT_TXT12, CT_TXT13 };
 
-#define M_TXT00 "Controle"
+#define M_TXT00 "Gamepad"
 #define M_TXT01 "Volume"
 #define M_TXT02 "Video"
-#define M_TXT03 "Senha"
-#define M_TXT04 "Menu Principal"
-#define M_TXT05 "Reiniciar Nivel"
-#define M_TXT06 "\x90 Voltar"
-#define M_TXT07 "Volume da Musica"
-#define M_TXT08 "Volume do Som"
-#define M_TXT09 "Brilho"
-#define M_TXT10 "Continuar"
-#define M_TXT11 "Opcoes"
+#define M_TXT03 "Password"
+#define M_TXT04 "Main Menu"
+#define M_TXT05 "Restart Level"
+#define M_TXT06 "\x90 Return"
+#define M_TXT07 "Music Volume"
+#define M_TXT08 "Sound Volume"
+#define M_TXT09 "Brightness"
+#define M_TXT10 "Resume"
+#define M_TXT11 "Options"
 #define M_TXT12 "Autorun:"
-#define M_TXT13 "Padroes" // default for video
-#define M_TXT14 "Novo Jogo"
-#define M_TXT15 "Seja Gentil!"
-#define M_TXT16 "Pode Vir!"
-#define M_TXT17 "Eu Sou o Doom!"
-#define M_TXT18 "Veja-Me Morrer!"
-#define M_TXT19 "Seja Implacavel!"
-#define M_TXT20 "Sim"
-#define M_TXT21 "Nao"
-#define M_TXT22 "Recursos"
-#define M_TXT23 "IR PARA NIVEL"
-#define M_TXT24 "INVULNERAVEL"
-#define M_TXT25 "AUMENTAR VIDA"
-#define M_TXT26 "CHAVES"
-#define M_TXT27 "ARMAS"
-#define M_TXT28 "Sair"
-#define M_TXT29 "DEPURAR"
-#define M_TXT30 "TESTE DE TEXTURA"
-#define M_TXT31 "BLOQU. PAREDES"
-#define M_TXT32 "Centralizar Tela"
-#define M_TXT33 "Mensagens:"
-#define M_TXT34 "Opacidade"
-#define M_TXT35 "BLOQ. MONSTROS"
-#define M_TXT36 "CAPTURA DE TELA"
-#define M_TXT37 "MAPEAR TUDO"
+#define M_TXT13 "Defaults" // default for video
+#define M_TXT14 "New Game"
+#define M_TXT15 "Be Gentle!"
+#define M_TXT16 "Bring It On!"
+#define M_TXT17 "I Own Doom!"
+#define M_TXT18 "Watch Me Die!"
+#define M_TXT19 "Be Merciless!"
+#define M_TXT20 "Yes"
+#define M_TXT21 "No"
+#define M_TXT22 "Features"
+#define M_TXT23 "WARP TO LEVEL"
+#define M_TXT24 "INVULNERABLE"
+#define M_TXT25 "HEALTH BOOST"
+#define M_TXT26 "SECURITY KEYS"
+#define M_TXT27 "WEAPONS"
+#define M_TXT28 "Exit"
+#define M_TXT29 "DEBUG"
+#define M_TXT30 "TEXTURE TEST"
+#define M_TXT31 "WALL BLOCKING"
+#define M_TXT32 "Center Display"
+#define M_TXT33 "Messages:"
+#define M_TXT34 "Opacity"
+#define M_TXT35 "LOCK MONSTERS"
+#define M_TXT36 "SCREENSHOT"
+#define M_TXT37 "MAP EVERYTHING"
 #define M_TXT38 "MACRO PEEK"
-#define M_TXT39 "TESTE DE MUSICA"
-#define M_TXT40 "IR ATE DIVERSAO"
-#define M_TXT41 "Movimento"
+#define M_TXT39 "MUSIC TEST"
+#define M_TXT40 "WARP TO FUN"
+#define M_TXT41 "Movement"
 #define M_TXT42 "Original" // Original default for Doom 64
-#define M_TXT43 "Sensibilidade"
-#define M_TXT44 "Gerenciar Pak"
-#define M_TXT45 "Nao usar Pak"
-#define M_TXT46 "Tente novamente"
-#define M_TXT47 "Criar nota do jogo"
+#define M_TXT43 "Sensitivity"
+#define M_TXT44 "Manage Pak"
+#define M_TXT45 "Do not use Pak"
+#define M_TXT46 "Try again"
+#define M_TXT47 "Create game note"
 
 // New additions to Doom 64 RE and Merciless Edition
-#define M_TXT48 "CORES" // [GEC] NEW CHEAT CODE
-#define M_TXT49 "TOTALMENTE BRILHANTE" // [GEC] NEW CHEAT CODE
-#define M_TXT50 "Filtragem:" // [GEC] New video filter option
-#define M_TXT51 "Tela" // [Immorpher] New menu item
-#define M_TXT52 "Balanco de Movimento" // [Immorpher] New menu item
-#define M_TXT53 "Filtro de Pontilhamento:" // [Immorpher] Dither Filter
-#define M_TXT54 "Antiserrilhado:" // [Immorpher] New anti-aliasing option
-#define M_TXT55 "Entrelacamento:" // [Immorpher] New interlacing option
-#define M_TXT56 "Pontilhamento de Cor:" // [Immorpher] New color dither options
-#define M_TXT57 "Brilho do Flash" // [Immorpher] New flash brightness option
-#define M_TXT58 "Implacavel" // [Immorpher] Merciless default settings
+#define M_TXT48 "COLORS" // [GEC] NEW CHEAT CODE
+#define M_TXT49 "FULL BRIGHT" // [GEC] NEW CHEAT CODE
+#define M_TXT50 "Filtering:" // [GEC] New video filter option
+#define M_TXT51 "Display" // [Immorpher] New menu item
+#define M_TXT52 "Motion Bob" // [Immorpher] New menu item
+#define M_TXT53 "Dither Filter:" // [Immorpher] Dither Filter
+#define M_TXT54 "Anti-Aliasing:" // [Immorpher] New anti-aliasing option
+#define M_TXT55 "Interlacing:" // [Immorpher] New interlacing option
+#define M_TXT56 "Color Dither:" // [Immorpher] New color dither options
+#define M_TXT57 "Flash Brightness" // [Immorpher] New flash brightness option
+#define M_TXT58 "Merciless" // [Immorpher] Merciless default settings
 #define M_TXT59 "Immorpher" // [Immorpher] Immorpher default settings
 #define M_TXT60 \
-	"Acessivel" // [Immorpher] Increased accessibility default settings
-#define M_TXT61 "Historia:" // [Immorpher] Skip cut scenes
-#define M_TXT62 "Estatisticas:" // [Immorpher] Display automap statistics
-#define M_TXT63 "HUD de Status" // [Immorpher] New menu option for HUD elements!
-#define M_TXT64 "Margem" // [Immorpher] Adjust the margin for the HUD
-#define M_TXT65 "IR PARA MAE" // [Immorpher] New features menu warps
-#define M_TXT66 "IR PARA SECRETO" // [Immorpher] New features menu warps
-#define M_TXT67 "Colorido:" // [Immorpher] Colored hud
-#define M_TXT68 "CORRECAO DE GAMA" // [Immorpher] NEW CHEAT CODE
+	"Accessible" // [Immorpher] Increased accessibility default settings
+#define M_TXT61 "Story Text:" // [Immorpher] Skip cut scenes
+#define M_TXT62 "Map Stats:" // [Immorpher] Display automap statistics
+#define M_TXT63 "Status HUD" // [Immorpher] New menu option for HUD elements!
+#define M_TXT64 "Margin" // [Immorpher] Adjust the margin for the HUD
+#define M_TXT65 "WARP TO MOTHER" // [Immorpher] New features menu warps
+#define M_TXT66 "WARP TO SECRET" // [Immorpher] New features menu warps
+#define M_TXT67 "Colored:" // [Immorpher] Colored hud
+#define M_TXT68 "GAMMA CORRECT" // [Immorpher] NEW CHEAT CODE
 
 // Merciless Edition Credits
-#define M_TXT69 "CREDITOS DA EDICAO IMPLACAVEL" // [Immorpher] Credits
-#define M_TXT70 "PROGRAMACAO IMPLACAVEL: IMMORPHER" // [Immorpher] Credits
-#define M_TXT71 "ENGENHARIA REVERSA: ERICK194" // [Immorpher] Credits
+#define M_TXT69 "MERCILESS EDITION CREDITS" // [Immorpher] Credits
+#define M_TXT70 "MERCILESS PROGRAMMING: IMMORPHER" // [Immorpher] Credits
+#define M_TXT71 "REVERSE ENGINEERING: ERICK194" // [Immorpher] Credits
 #define M_TXT72 "KAISER" // [Immorpher] Credits
 #define M_TXT73 "BODB DEARG" // [Immorpher] Credits
 #define M_TXT74 "QUASAR" // [Immorpher] Credits
-#define M_TXT75 "ATIVOS DO COMPILADOR: CRASHOVERIDE" // [Immorpher] Credits
+#define M_TXT75 "COMPILER ASSETS: CRASHOVERIDE" // [Immorpher] Credits
 #define M_TXT76 "ALPHATANGO" // [Immorpher] Credits
-#define M_TXT77 "TESTES DE JOGO: SCD, BUU342" // [Immorpher] Credits
+#define M_TXT77 "PLAY TESTING: SCD, BUU342" // [Immorpher] Credits
 #define M_TXT78 "IRL RANDOM HAJILE" // [Immorpher] Credits
 #define M_TXT79 "TAUFAN99" // [Immorpher] Credits
-#define M_TXT80 "AGRADECIMENTOS ESPECIAIS: EQUIPE GEC, DOOMWORLD" // [Immorpher] Credits
-#define M_TXT81 "DISCORD DO DOOM 64" // [Immorpher] Credits
+#define M_TXT80 "SPECIAL THANKS: GEC TEAM, DOOMWORLD" // [Immorpher] Credits
+#define M_TXT81 "DOOM 64 DISCORD" // [Immorpher] Credits
 #define M_TXT82 "NEIGH WINNY" // [Immorpher] Credits
 #define M_TXT83 "ISANN KEKET" // [Immorpher] Credits
 #define M_TXT84 "NEVANDER" // [Immorpher] Credits
 
 
-#define M_TXT85 "Absolucao"
-#define M_TXT86 "Fases Perdidas"
-#define M_TXT87 "Nos Joelhos\nNa Morte"
+#define M_TXT85 "Absolution"
+#define M_TXT86 "Lost Levels"
+#define M_TXT87 "Knee-Deep\nIn The Dead"
 
-#define M_TXT88 "Qualidade"
-#define M_TXT89 "Baixa"
-#define M_TXT90 "Media"
+#define M_TXT88 "Quality"
+#define M_TXT89 "Low"
+#define M_TXT90 "Medium"
 #define M_TXT91 "Ultra"
 
 #define M_TXT92 "FPS"
 #define M_TXT93 "30"
-#define M_TXT94 "Sem Limite"
+#define M_TXT94 "Uncapped"
 
-#define M_TXT95 "Vibracao:"
+#define M_TXT95 "Rumble:"
 
 char *MenuText[] = // 8005ABA0
 	{
@@ -979,12 +979,8 @@ int M_MenuTicker(void)
 							M_MenuGameDrawer);
 					M_RestoreMenuData((exit == ga_exit));
 					if (exit == ga_exit) {
-					// have to exit eventually, good enough place to hook this
-					I_SavePakSettings();
 						return ga_nothing;
 					}
-					// have to exit eventually, good enough place to hook this
-					I_SavePakSettings();
 					return 5; //ga_exitdemo;
 				}
 				break;
@@ -1004,8 +1000,6 @@ int M_MenuTicker(void)
 							M_FadeOutStart,
 							M_MenuTicker,
 							M_MenuGameDrawer);
-
-     
 
 					if (exit == ga_exit &&
 					    cursorpos ==
@@ -2201,32 +2195,32 @@ void M_MenuTitleDrawer(void) // 80008E7C
 	menuitem_t *item;
 	int i;
 	if (MenuItem == Menu_Game) {
-		ST_DrawString(-1, 20, "Pausado", text_alpha | 0xc0000000,1);
-		ST_DrawString(-1, 200, "aperte \x8d para continuar",
+		ST_DrawString(-1, 20, "Pause", text_alpha | 0xc0000000,1);
+		ST_DrawString(-1, 200, "press \x8d to resume",
 			      text_alpha | 0xffffff00,1);
 	} else if (MenuItem == Menu_Skill) {
-		ST_DrawString(-1, 20, "Escolha Sua Habilidade...",
+		ST_DrawString(-1, 20, "Choose Your Skill...",
 			      text_alpha | 0xc0000000,1);
 	} else if (MenuItem == Menu_Options) {
-		ST_DrawString(-1, 20, "Opcoes", text_alpha | 0xc0000000,1);
+		ST_DrawString(-1, 20, "Options", text_alpha | 0xc0000000,1);
 	} else if (MenuItem == Menu_Quit) {
-		ST_DrawString(-1, 20, "Sair do Jogo?", text_alpha | 0xc0000000,1);
+		ST_DrawString(-1, 20, "Quit Game?", text_alpha | 0xc0000000,1);
 	} else if (MenuItem == Menu_DeleteNote) {
-		ST_DrawString(-1, 20, "Excluir Nota do Jogo?",
+		ST_DrawString(-1, 20, "Delete Game Note?",
 			      text_alpha | 0xc0000000,1);
 	} else if (MenuItem == Menu_ControllerPakBad) {
-		ST_DrawString(-1, 20, "VMU Ruim",
+		ST_DrawString(-1, 20, "Controller Pak Bad",
 			      text_alpha | 0xc0000000,1);
 	} else if (MenuItem == Menu_ControllerPakFull) {
-		ST_DrawString(-1, 20, "VMU Cheio",
+		ST_DrawString(-1, 20, "Controller Pak Full",
 			      text_alpha | 0xc0000000,1);
 	} else if (MenuItem == Menu_CreateNote) {
-		ST_DrawString(-1, 20, "Criar Nota do Jogo?",
+		ST_DrawString(-1, 20, "Create Game Note?",
 			      text_alpha | 0xc0000000,1);
 	} else if (MenuItem == Menu_Episode) {
-		ST_DrawString(-1, 20, "Escolher Campanha", text_alpha | 0xc0000000,1);
+		ST_DrawString(-1, 20, "Choose Campaign", text_alpha | 0xc0000000,1);
 	} else if (MenuItem == Menu_2Episode) {
-		ST_DrawString(-1, 20, "Escolher Campanha", text_alpha | 0xc0000000,1);
+		ST_DrawString(-1, 20, "Choose Campaign", text_alpha | 0xc0000000,1);
 	}
 
 	item = MenuItem;
@@ -2246,7 +2240,7 @@ void M_FeaturesDrawer(void) // 800091C0
 	menuitem_t *item;
 	int i;
 
-	ST_DrawString(-1, 20, "Recursos", text_alpha | 0xc0000000,1);
+	ST_DrawString(-1, 20, "Features", text_alpha | 0xc0000000,1);
 	item = MenuItem;
 
 	for (i = 0; i < itemlines; i++) {
@@ -2281,8 +2275,8 @@ void M_FeaturesDrawer(void) // 800091C0
 			sprintf(textbuff, "%s", MapInfo[m_actualmap].name);
 			break;
 		case 24: /* INVULNERABLE */
-			text = (!(players[0].cheats & CF_GODMODE)) ? "DES" :
-								     "LIG";
+			text = (!(players[0].cheats & CF_GODMODE)) ? "OFF" :
+								     "ON";
 			break;
 		case 25: /* HEALTH BOOST */
 			text = (!(players[0].cheats & CF_HEALTH)) ? "-" :
@@ -2299,16 +2293,16 @@ void M_FeaturesDrawer(void) // 800091C0
 		case 28: /* Exit */
 			break;
 		case 31: /* WALL BLOCKING */
-			text = (!(players[0].cheats & CF_WALLBLOCKING)) ? "LIG" :
-									  "DES";
+			text = (!(players[0].cheats & CF_WALLBLOCKING)) ? "ON" :
+									  "OFF";
 			break;
 		case 35: /* LOCK MONSTERS */
-			text = (!(players[0].cheats & CF_LOCKMOSTERS)) ? "DES" :
-									 "LIG";
+			text = (!(players[0].cheats & CF_LOCKMOSTERS)) ? "OFF" :
+									 "ON";
 			break;
 		case 37: /* MAP EVERYTHING */
-			text = (!(players[0].cheats & CF_ALLMAP)) ? "DES" :
-								    "LIG";
+			text = (!(players[0].cheats & CF_ALLMAP)) ? "OFF" :
+								    "ON";
 			break;
 		case 39: /* MUSIC TEST */
 			sprintf(textbuff, "%d", MusicID);
@@ -2316,17 +2310,17 @@ void M_FeaturesDrawer(void) // 800091C0
 
 		// [GEC] NEW CHEAT CODES
 		case 48: /* COLORS */
-			text = (!(players[0].cheats & CF_NOCOLORS)) ? "LIG" :
-								      "DES";
+			text = (!(players[0].cheats & CF_NOCOLORS)) ? "ON" :
+								      "OFF";
 			break;
 
 		case 49: /* FULL BRIGHT */
-			text = (!(players[0].cheats & CF_FULLBRIGHT)) ? "DES" :
-									"LIG";
+			text = (!(players[0].cheats & CF_FULLBRIGHT)) ? "OFF" :
+									"ON";
 			break;
 
 		case 68: /* Gamma Correction */
-			text = (!(players[0].cheats & CF_GAMMA)) ? "DES" : "LIG";
+			text = (!(players[0].cheats & CF_GAMMA)) ? "OFF" : "ON";
 			break;
 
 		default:
@@ -2349,7 +2343,7 @@ void M_CreditsDrawer(void) // 800091C0
 	menuitem_t *item;
 	int i;
 
-	ST_DrawString(-1, 20, "Creditos", text_alpha | 0xc0000000,1);
+	ST_DrawString(-1, 20, "Merciless Credits", text_alpha | 0xc0000000,1);
 	item = MenuItem;
 
 	for (i = 0; i < itemlines; i++) {
@@ -2396,7 +2390,7 @@ void M_MovementDrawer(void) // 80009738
 	menuitem_t *item;
 	int i, casepos;
 
-	ST_DrawString(-1, 20, "Movimento", text_alpha | 0xc0000000,1);
+	ST_DrawString(-1, 20, "Movement", text_alpha | 0xc0000000,1);
 
 	item = Menu_Movement;
 
@@ -2405,14 +2399,14 @@ void M_MovementDrawer(void) // 80009738
 
 		if (casepos == 12) {
 			if (menu_settings.Autorun)
-				text = "LIG";
+				text = "On";
 			else
-				text = "DES";
+				text = "Off";
 		} else if (casepos == 95) {
 			if (menu_settings.Rumble)
-				text = "LIG";
+				text = "On";
 			else
-				text = "DES";
+				text = "Off";
 		}
 		 else {
 			text = NULL;
@@ -2462,17 +2456,17 @@ void M_VideoDrawer(void) // 80009884
 		} else if (casepos == 88) // quality menu
 		{
 			if (global_render_state.quality == 0)
-				text = "Baixa";
+				text = "Low";
 			else if (global_render_state.quality == 1)
-				text = "Media";
+				text = "Medium";
 			else if (global_render_state.quality == 2)
 				text = "Ultra";
 		} else if (casepos == 50) // [GEC and Immorpher] New video filter
 		{
 			if (menu_settings.VideoFilter == PVR_FILTER_BILINEAR)
-				text = "LIG";
+				text = "On";
 			else
-				text = "DES";
+				text = "Off";
 		} else {
 			text = NULL;
 		}
@@ -2501,7 +2495,7 @@ void M_DisplayDrawer(void) // 80009884
 	menuitem_t *item;
 	int i, casepos;
 
-	ST_DrawString(-1, 20, "Tela", text_alpha | 0xc0000000,1);
+	ST_DrawString(-1, 20, "Display", text_alpha | 0xc0000000,1);
 
 	item = Menu_Display;
 
@@ -2511,15 +2505,15 @@ void M_DisplayDrawer(void) // 80009884
 		if (casepos == 61) // Story Text:
 		{
 			if (menu_settings.StoryText)
-				text = "LIG";
+				text = "On";
 			else
-				text = "DES";
+				text = "Off";
 		} else if (casepos == 62) // Map stats:
 		{
 			if (menu_settings.MapStats)
-				text = "LIG";
+				text = "On";
 			else
-				text = "DES";
+				text = "Off";
 		} else {
 			text = NULL;
 		}
@@ -2548,7 +2542,7 @@ void M_StatusHUDDrawer(void) // 80009884
 	menuitem_t *item;
 	int i, casepos;
 
-	ST_DrawString(-1, 20, "HUD de Status", text_alpha | 0xc0000000,1);
+	ST_DrawString(-1, 20, "Status HUD", text_alpha | 0xc0000000,1);
 
 	item = Menu_StatusHUD;
 
@@ -2558,15 +2552,15 @@ void M_StatusHUDDrawer(void) // 80009884
 		if (casepos == 33) // Messages:
 		{
 			if (menu_settings.enable_messages)
-				text = "LIG";
+				text = "On";
 			else
-				text = "DES";
+				text = "Off";
 		} else if (casepos == 67) // Colored HUD:
 		{
 			if (menu_settings.ColoredHUD)
-				text = "LIG";
+				text = "On";
 			else
-				text = "DES";
+				text = "Off";
 		} else {
 			text = NULL;
 		}
@@ -2601,7 +2595,7 @@ void M_DefaultsDrawer(void) // [Immorpher] new defaults drawer
     menuitem_t *item;
     int i, casepos;
 
-    ST_DrawString(-1, 20, "Definir Padroes", text_alpha | 0xc0000000);
+    ST_DrawString(-1, 20, "Set Defaults", text_alpha | 0xc0000000);
 
     item = Menu_Defaults;
 
@@ -2923,21 +2917,21 @@ int M_ScreenTicker(void) // 8000A0F8
 
 void M_ControllerPakDrawer(void) // 8000A3E4
 {
-    ST_DrawString(-1, 20, "VMU", text_alpha | 0xc0000000, 1);
+    ST_DrawString(-1, 20, "Controller Pak", text_alpha | 0xc0000000, 1);
 
     if (FilesUsed == -1)
     {
         if ((MenuAnimationTic & 2) != 0)
-            ST_DrawString(-1, 114, "VMU removido!", text_alpha | 0xc0000000, 1);
+            ST_DrawString(-1, 114, "Controller Pak removed!", text_alpha | 0xc0000000, 1);
 
-        ST_DrawString(-1, 210, "pressione \x8d para sair", text_alpha | 0xffffff00, 1);
+        ST_DrawString(-1, 210, "press \x8d to exit", text_alpha | 0xffffff00, 1);
     }
     else
 	{
-        ST_DrawString(-1, 114, "Por favor, use", text_alpha | 0xc0000000, 1);
-		ST_DrawString(-1, 130, "a BIOS do Dreamcast", text_alpha | 0xc0000000, 1);
-		ST_DrawString(-1, 146, "para o gerenciamento do VMU.", text_alpha | 0xc0000000, 1);
-        ST_DrawString(-1, 210, "pressione \x8d para sair", text_alpha | 0xffffff00, 1);
+        ST_DrawString(-1, 114, "Please use", text_alpha | 0xc0000000, 1);
+		ST_DrawString(-1, 130, "Dreamcast BIOS", text_alpha | 0xc0000000, 1);
+		ST_DrawString(-1, 146, "for VMU management.", text_alpha | 0xc0000000, 1);
+        ST_DrawString(-1, 210, "press \x8d to exit", text_alpha | 0xffffff00, 1);
 
 #if 0
         fState = &FileState[linepos];
@@ -2980,21 +2974,21 @@ void M_ControllerPakDrawer(void) // 8000A3E4
 
         if (linepos != 0)
         {
-            ST_DrawString(60, 45, "\x8F mais...", text_alpha | 0xffffff00);
+            ST_DrawString(60, 45, "\x8F more...", text_alpha | 0xffffff00);
         }
 
         if ((linepos + 6) < 16)
         {
-            ST_DrawString(60, 150, "\x8E mais...", text_alpha | 0xffffff00);
+            ST_DrawString(60, 150, "\x8E more...", text_alpha | 0xffffff00);
         }
 
-        sprintf(buffer, "usado: %d   livre: %d", FileState[cursorpos].file_size >> 8, Pak_Memory);
+        sprintf(buffer, "pages used: %d   free: %d", FileState[cursorpos].file_size >> 8, Pak_Memory);
 
         ST_DrawString(-1, 170, buffer, text_alpha | 0xc0000000);
         ST_DrawSymbol(23, (cursorpos - linepos) * 15 + 51, MenuAnimationTic + 70, text_alpha | 0xffffff00);
 
-        ST_DrawString(-1, 200, "pressione \x8d para sair", text_alpha | 0xffffff00);
-        ST_DrawString(-1, 215, "pressione \x84\x85 para apagar", text_alpha | 0xffffff00);
+        ST_DrawString(-1, 200, "press \x8d to exit", text_alpha | 0xffffff00);
+        ST_DrawString(-1, 215, "press \x84\x85 to delete", text_alpha | 0xffffff00);
 #endif		
     }
 }
@@ -3173,15 +3167,15 @@ void M_SavePakDrawer(void)
 	pvr_fog_table_color(0.0f,0.0f,0.0f,0.0f);
     M_DrawBackground(63, 25, 128, "EVIL", 0.00015f, 0);
 
-    ST_DrawString(-1, 20, "VMU", text_alpha | 0xc0000000, 1);
+    ST_DrawString(-1, 20, "Controller Pak", text_alpha | 0xc0000000, 1);
 
     if (FilesUsed == -1) {
         if (MenuAnimationTic & 2) {
-            ST_DrawString(-1, 100, "VMU removido!", 0xc00000ff, 1);
-            ST_DrawString(-1, 120, "O jogo nao pode ser salvo.", 0xc00000ff, 1);
+            ST_DrawString(-1, 100, "Controller Pak removed!", 0xc00000ff, 1);
+            ST_DrawString(-1, 120, "Game cannot be saved.", 0xc00000ff, 1);
         }
 
-        ST_DrawString(-1, 210, "pressione \x8d para sair", text_alpha | 0xffffff00, 1);
+        ST_DrawString(-1, 210, "press \x8d to exit", text_alpha | 0xffffff00, 1);
     } else {
         for(i = linepos; i < (linepos + 6); i++) {
             if (Pak_Data[i * 32] == 0) {
@@ -3194,18 +3188,18 @@ void M_SavePakDrawer(void)
         }
 
         if (linepos != 0) {
-            ST_DrawString(60, 50, "\x8f mais...", text_alpha | 0xffffff00, 1);
+            ST_DrawString(60, 50, "\x8f more...", text_alpha | 0xffffff00, 1);
         }
 
         if ((linepos + 6) <= ((Pak_Size >> 5) - 1)) {
-            ST_DrawString(60, 155, "\x8e mais...", text_alpha | 0xffffff00, 1);
+            ST_DrawString(60, 155, "\x8e more...", text_alpha | 0xffffff00, 1);
         }
 
         ST_DrawSymbol(23, (cursorpos - linepos) * 15 + 56, MenuAnimationTic + 70, text_alpha | 0xffffff00, 1);
 
-        ST_DrawString(-1, 195, "pressione \x8d para sair", text_alpha | 0xffffff00, 1);
+        ST_DrawString(-1, 195, "press \x8d to exit", text_alpha | 0xffffff00, 1);
 		// changed to z trigger
-        ST_DrawString(-1, 210, "pressione \x8c para salvar", text_alpha | 0xffffff00, 1);
+        ST_DrawString(-1, 210, "press \x8c to save", text_alpha | 0xffffff00, 1);
     }
 
     I_DrawFrame();
@@ -3343,13 +3337,13 @@ void M_LoadPakDrawer(void) // 8000B270
     int i;
     char buffer[32];
 
-    ST_DrawString(-1, 20, "VMU", text_alpha | 0xc0000000, 1);
+    ST_DrawString(-1, 20, "Controller Pak", text_alpha | 0xc0000000, 1);
 
     for(i = linepos; i < (linepos + 6); i++) {
         if (FilesUsed == -1) {
             D_memmove(buffer, "-");
         } else if (Pak_Data[i * 32] == 0) {
-            D_memmove(buffer, "sem salvamento");
+            D_memmove(buffer, "no save");
         } else {
             D_memmove(buffer, (char *)&Pak_Data[i * 32]);
         }
@@ -3358,17 +3352,17 @@ void M_LoadPakDrawer(void) // 8000B270
     }
 
     if (linepos != 0) {
-        ST_DrawString(60, 50, "\x8f mais...", text_alpha | 0xffffff00, 1);
+        ST_DrawString(60, 50, "\x8f more...", text_alpha | 0xffffff00, 1);
     }
 
     if ((linepos + 6) <= ((Pak_Size >> 5) - 1)) {
-        ST_DrawString(60, 155, "\x8e mais...", text_alpha | 0xffffff00, 1);
+        ST_DrawString(60, 155, "\x8e more...", text_alpha | 0xffffff00, 1);
     }
 
     ST_DrawSymbol(23, (cursorpos - linepos) * 15 + 56, MenuAnimationTic + 70, text_alpha | 0xffffff00, 1);
 
-    ST_DrawString(-1, 195, "pressione \x8D para sair", text_alpha | 0xffffff00, 1);
-    ST_DrawString(-1, 210, "pressione \x8c para carregar", text_alpha | 0xffffff00, 1);
+    ST_DrawString(-1, 195, "press \x8D to exit", text_alpha | 0xffffff00, 1);
+    ST_DrawString(-1, 210, "press \x8c to load", text_alpha | 0xffffff00, 1);
 }
 
 int M_CenterDisplayTicker(void) // 8000B4C4
@@ -3414,10 +3408,10 @@ int M_CenterDisplayTicker(void) // 8000B4C4
 
 void M_CenterDisplayDrawer(void) // 8000B604
 {
-	ST_DrawString(-1, 20, "Centralizar Tela", text_alpha | 0xc0000000,1);
-	ST_DrawString(-1, 114, "use o controle para ajustar",
+	ST_DrawString(-1, 20, "Center Display", text_alpha | 0xc0000000,1);
+	ST_DrawString(-1, 114, "use gamepad to adjust",
 		      text_alpha | 0xffffff00,1);
-	ST_DrawString(-1, 210, "pressione \x8d para sair", text_alpha | 0xffffff00,1);
+	ST_DrawString(-1, 210, "press \x8d to exit", text_alpha | 0xffffff00,1);
 }
 
 int M_ControlPadTicker(void) // 8000B694
@@ -3571,7 +3565,7 @@ void M_ControlPadDrawer(void) // 8000B988
 	int lpos;
 	char **text;
 	char buffer[64];
-	ST_DrawString(-1, 20, "Controle", text_alpha | 0xc0000000,1);
+	ST_DrawString(-1, 20, "Gamepad", text_alpha | 0xc0000000,1);
 
 	if (linepos < (linepos + 6)) {
 		text = &ControlText[linepos];
@@ -3591,7 +3585,7 @@ void M_ControlPadDrawer(void) // 8000B988
 			if (ConfgNumb == 6 &&
 			    lpos == 0) // jnmartin84 If statement for custom controller config
 			{
-				sprintf(buffer, "Configurao Personalizada");
+				sprintf(buffer, "Custom Config");
 			} else if (ConfgNumb == 5 &&
 				   lpos == 0) // [Immorpher] If statement for new retro fighters
 			{
@@ -3611,15 +3605,15 @@ void M_ControlPadDrawer(void) // 8000B988
 	}
 
 	if (linepos != 0) {
-		ST_DrawString(80, 50, "\x8f mais...", text_alpha | 0xffffff00,1);
+		ST_DrawString(80, 50, "\x8f more...", text_alpha | 0xffffff00,1);
 	}
 
 	if ((linepos + 6) < 14) {
-		ST_DrawString(80, 176, "\x8e mais...", text_alpha | 0xffffff00,1);
+		ST_DrawString(80, 176, "\x8e more...", text_alpha | 0xffffff00,1);
 	}
 
 	ST_DrawSymbol(23, (cursorpos - linepos) * 0x12 + 0x3b,
 		      MenuAnimationTic + 0x46, text_alpha | 0xffffff00,1);
 
-	ST_DrawString(-1, 210, "pressione \x8d para sair", text_alpha | 0xffffff00,1);
+	ST_DrawString(-1, 210, "press \x8d to exit", text_alpha | 0xffffff00,1);
 }
